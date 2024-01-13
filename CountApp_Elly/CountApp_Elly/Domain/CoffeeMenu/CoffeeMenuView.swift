@@ -21,29 +21,7 @@ struct CoffeeMenuView: View {
                             viewStore.send(.menuTapped(index, 1))
                         }
                         .contextMenu {
-                            Button {
-                                viewStore.send(.removeAllMenuCounting)
-                            } label: {
-                                Text(String(localized: "text_all_reset"))
-                            }
-
-                            Button {
-                                viewStore.send(.menuTapped(index, 1))
-                            } label: {
-                                Text("+1")
-                            }
-                            
-                            Button {
-                                viewStore.send(.menuTapped(index, 5))
-                            } label: {
-                                Text("+5")
-                            }
-                            
-                            Button {
-                                viewStore.send(.menuTapped(index, 10))
-                            } label: {
-                                Text("+10")
-                            }
+                            CoffeeMenuContextView(viewStore: viewStore, index: index)
                         }
                 }
             }

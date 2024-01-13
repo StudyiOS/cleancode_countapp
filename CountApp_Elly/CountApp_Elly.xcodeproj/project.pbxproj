@@ -28,6 +28,8 @@
 		453089512B52974700E199B9 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089502B52974700E199B9 /* Color+.swift */; };
 		4539469E2B52B37D007FE780 /* CountingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4539469D2B52B37D007FE780 /* CountingItemView.swift */; };
 		453946A12B52BE19007FE780 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 453946A02B52BE19007FE780 /* Localizable.xcstrings */; };
+		453946A32B52CB20007FE780 /* CoffeeMenuContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453946A22B52CB20007FE780 /* CoffeeMenuContextView.swift */; };
+		453946A52B52CBA3007FE780 /* TapCountingContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453946A42B52CBA3007FE780 /* TapCountingContextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		453089502B52974700E199B9 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		4539469D2B52B37D007FE780 /* CountingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingItemView.swift; sourceTree = "<group>"; };
 		453946A02B52BE19007FE780 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		453946A22B52CB20007FE780 /* CoffeeMenuContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenuContextView.swift; sourceTree = "<group>"; };
+		453946A42B52CBA3007FE780 /* TapCountingContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCountingContextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				4530893B2B5278C900E199B9 /* TapCountingView.swift */,
+				453946A42B52CBA3007FE780 /* TapCountingContextView.swift */,
 			);
 			path = TapCounting;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			children = (
 				4530894C2B52874E00E199B9 /* MenuItemView.swift */,
 				4539469D2B52B37D007FE780 /* CountingItemView.swift */,
+				453946A22B52CB20007FE780 /* CoffeeMenuContextView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -373,11 +379,13 @@
 				453089492B527FD500E199B9 /* Latte.swift in Sources */,
 				453089362B5278A100E199B9 /* CoffeeMenuView.swift in Sources */,
 				4530894D2B52874E00E199B9 /* MenuItemView.swift in Sources */,
+				453946A52B52CBA3007FE780 /* TapCountingContextView.swift in Sources */,
 				453089432B527B2F00E199B9 /* Americano.swift in Sources */,
 				4530894B2B527FF700E199B9 /* CaramelMacchiato.swift in Sources */,
 				453089092B52725500E199B9 /* CounterAppView.swift in Sources */,
 				453089402B527AAF00E199B9 /* Menu.swift in Sources */,
 				453089512B52974700E199B9 /* Color+.swift in Sources */,
+				453946A32B52CB20007FE780 /* CoffeeMenuContextView.swift in Sources */,
 				453089382B5278B000E199B9 /* CounterAppStore.swift in Sources */,
 				4539469E2B52B37D007FE780 /* CountingItemView.swift in Sources */,
 				4530893C2B5278C900E199B9 /* TapCountingView.swift in Sources */,
