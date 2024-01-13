@@ -35,3 +35,6 @@ t
         - 커피메뉴 누를 때 색상 변경 및 현재 카운팅 숫자 나타남 -> 1초 후 사라짐
         - 타이틀 'MY CAFE'
         
+- 구현 미리보기
+
+<img src="./img/countapp_elly.gif" width="30%"> 
