@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct CountApp_EllyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CounterAppView(store: Store(initialState: CounterAppStore.State(), reducer: { CounterAppStore() }))
         }
     }
 }
