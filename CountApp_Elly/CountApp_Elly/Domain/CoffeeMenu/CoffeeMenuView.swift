@@ -24,7 +24,7 @@ struct CoffeeMenuView: View {
                             Button {
                                 viewStore.send(.removeAllMenuCounting)
                             } label: {
-                                Text("모두 초기화")
+                                Text(String(localized: "text_all_reset"))
                             }
 
                             Button {

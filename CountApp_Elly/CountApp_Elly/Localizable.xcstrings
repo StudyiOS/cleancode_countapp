@@ -73,6 +73,66 @@
         }
       }
     },
+    "text_all_reset" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모두 초기화"
+          }
+        }
+      }
+    },
+    "text_reset_americano" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아메리카노 초기화"
+          }
+        }
+      }
+    },
+    "text_reset_caramel_macchiato" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카라멜 마끼아또 초기화"
+          }
+        }
+      }
+    },
+    "text_reset_hazelnut" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "헤이즐넛 라떼 초기화"
+          }
+        }
+      }
+    },
+    "text_reset_latte" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카페 라떼 초기화"
+          }
+        }
+      }
+    },
+    "text_reset_mocha" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카페 모카 초기화"
+          }
+        }
+      }
+    },
     "title_coffee_menu_counting" : {
       "localizations" : {
         "ko" : {
@@ -92,24 +152,6 @@
           }
         }
       }
-    },
-    "모두 초기화" : {
-
-    },
-    "아메리카노 초기화" : {
-
-    },
-    "카라멜 마끼아또 초기화" : {
-
-    },
-    "카페 라떼 초기화" : {
-
-    },
-    "카페 모카 초기화" : {
-
-    },
-    "헤이즐넛 라떼 초기화" : {
-
     }
   },
   "version" : "1.0"

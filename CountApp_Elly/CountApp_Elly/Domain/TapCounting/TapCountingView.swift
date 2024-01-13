@@ -30,37 +30,37 @@ struct TapCountingView: View {
                         Button(action: {
                             viewStore.send(.removeAllMenuCounting)
                         }, label: {
-                            Text("모두 초기화")
+                            Text(String(localized: "text_all_reset"))
                         })
                         
                         Button(action: {
                             viewStore.send(.removeMenuCounting(0))
                         }, label: {
-                            Text("아메리카노 초기화")
+                            Text(String(localized: "text_reset_americano"))
                         })
                         
                         Button(action: {
                             viewStore.send(.removeMenuCounting(1))
                         }, label: {
-                            Text("카페 라떼 초기화")
+                            Text(String(localized: "text_reset_latte"))
                         })
                         
                         Button(action: {
                             viewStore.send(.removeMenuCounting(2))
                         }, label: {
-                            Text("카라멜 마끼아또 초기화")
+                            Text(String(localized: "text_reset_caramel_macchiato"))
                         })
                         
                         Button(action: {
                             viewStore.send(.removeMenuCounting(3))
                         }, label: {
-                            Text("카페 모카 초기화")
+                            Text(String(localized: "text_reset_mocha"))
                         })
                         
                         Button(action: {
                             viewStore.send(.removeMenuCounting(4))
                         }, label: {
-                            Text("헤이즐넛 라떼 초기화")
+                            Text(String(localized: "text_reset_hazelnut"))
                         })
                     }, label: {
                         Image(systemName: "gearshape")
