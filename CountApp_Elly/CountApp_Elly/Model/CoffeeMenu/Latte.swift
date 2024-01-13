@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Latte: Menu {
+class Latte: CoffeeMenu {
     var id = UUID()
     private(set) var tapCount: Int = 0
     
@@ -25,5 +25,9 @@ class Latte: Menu {
     
     func addCount(_ number: Int) {
         self.tapCount += number
+    }
+    
+    func resetCount() {
+        self.tapCount = 0
     }
 }

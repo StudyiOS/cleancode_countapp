@@ -11,7 +11,7 @@ import ComposableArchitecture
 struct MenuItemView: View {
     @ObservedObject var viewStore: ViewStore<CounterAppStore.State, CounterAppStore.Action>
     var index: Int
-    private var menu: any Menu {
+    private var menu: any CoffeeMenu {
         return viewStore.listOfMenu[index]
     }
     

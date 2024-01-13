@@ -7,11 +7,12 @@
 
 import Foundation
 
-protocol Menu: Identifiable {
+protocol CoffeeMenu: Identifiable {
     var id: UUID { get }
     var tapCount: Int { get }
     func title() -> String
     func icon() -> String
     func backgroundColor() -> Int
     func addCount(_ number: Int)
+    func resetCount()
 }

@@ -22,15 +22,27 @@ struct CoffeeMenuView: View {
                         }
                         .contextMenu {
                             Button {
-                                print("Change country setting")
+                                viewStore.send(.removeAllMenuCounting)
                             } label: {
-                                Label("Choose Country", systemImage: "globe")
+                                Text("모두 초기화")
                             }
 
                             Button {
-                                print("Enable geolocation")
+                                viewStore.send(.menuTapped(index, 1))
                             } label: {
-                                Label("Detect Location", systemImage: "location.circle")
+                                Text("+1")
+                            }
+                            
+                            Button {
+                                viewStore.send(.menuTapped(index, 5))
+                            } label: {
+                                Text("+5")
+                            }
+                            
+                            Button {
+                                viewStore.send(.menuTapped(index, 10))
+                            } label: {
+                                Text("+10")
                             }
                         }
                 }

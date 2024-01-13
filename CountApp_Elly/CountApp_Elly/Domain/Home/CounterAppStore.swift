@@ -10,7 +10,7 @@ import ComposableArchitecture
 @Reducer
 struct CounterAppStore {
     struct State: Equatable {
-        var listOfMenu: [any Menu] = [
+        var listOfMenu: [any CoffeeMenu] = [
             Americano(), Latte(), CaramelMacchiato(), Mocha(), Hazelnut()
         ]
         var indexOfTapped: Int = 0
@@ -25,6 +25,8 @@ struct CounterAppStore {
         case hideMenuCounting
         case addCount(_ count: Int)
         case setShowMenuCounting
+        case removeAllMenuCounting
+        case removeMenuCounting(_ index: Int)
     }
     
     var body: some Reducer<State, Action> {
@@ -41,6 +43,12 @@ struct CounterAppStore {
                     return .none
                 case .hideMenuCounting:
                     state.isShowMenuCounting = false
+                    return .none
+                case .removeAllMenuCounting:
+                    _ = state.listOfMenu.compactMap { $0.resetCount() }
+                    return .none
+                case .removeMenuCounting(let index):
+                    _ = state.listOfMenu[index].resetCount()
                     return .none
             }
         }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Mocha: Menu {
+class Mocha: CoffeeMenu {
     var id = UUID()
     private(set) var tapCount: Int = 0
     
@@ -25,5 +25,9 @@ class Mocha: Menu {
     
     func addCount(_ number: Int) {
         self.tapCount += number
+    }
+    
+    func resetCount() {
+        self.tapCount = 0
     }
 }

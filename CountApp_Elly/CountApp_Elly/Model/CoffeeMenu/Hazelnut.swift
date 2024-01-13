@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Hazelnut: Menu {
+class Hazelnut: CoffeeMenu {
     var id = UUID()
     private(set) var tapCount: Int = 0
     
@@ -25,5 +25,9 @@ class Hazelnut: Menu {
     
     func addCount(_ number: Int) {
         self.tapCount += number
+    }
+    
+    func resetCount() {
+        self.tapCount = 0
     }
 }
