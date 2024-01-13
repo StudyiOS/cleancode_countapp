@@ -27,6 +27,7 @@
 		4530894D2B52874E00E199B9 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530894C2B52874E00E199B9 /* MenuItemView.swift */; };
 		453089512B52974700E199B9 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089502B52974700E199B9 /* Color+.swift */; };
 		4539469E2B52B37D007FE780 /* CountingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4539469D2B52B37D007FE780 /* CountingItemView.swift */; };
+		453946A12B52BE19007FE780 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 453946A02B52BE19007FE780 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		4530894C2B52874E00E199B9 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
 		453089502B52974700E199B9 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		4539469D2B52B37D007FE780 /* CountingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingItemView.swift; sourceTree = "<group>"; };
+		453946A02B52BE19007FE780 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				4530894F2B52972600E199B9 /* Extension */,
 				4530890A2B52725700E199B9 /* Assets.xcassets */,
 				4530890C2B52725700E199B9 /* Preview Content */,
+				453946A02B52BE19007FE780 /* Localizable.xcstrings */,
 			);
 			path = CountApp_Elly;
 			sourceTree = "<group>";
@@ -313,11 +316,12 @@
 			};
 			buildConfigurationList = 453088FE2B52725500E199B9 /* Build configuration list for PBXProject "CountApp_Elly" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 453088FA2B52725500E199B9;
 			packageReferences = (
@@ -341,6 +345,7 @@
 			files = (
 				4530890E2B52725700E199B9 /* Preview Assets.xcassets in Resources */,
 				4530890B2B52725700E199B9 /* Assets.xcassets in Resources */,
+				453946A12B52BE19007FE780 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

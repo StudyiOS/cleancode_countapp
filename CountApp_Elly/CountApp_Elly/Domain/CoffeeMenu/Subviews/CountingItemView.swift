@@ -21,7 +21,7 @@ struct CountingItemView: View {
             Text(menu.title())
             HStack {
                 Spacer()
-                Text("\(menu.tapCount)점")
+                Text(String(format: String(localized: "%dpoint"), menu.tapCount))
                     .font(.system(size: 15, weight: .bold))
                     .foregroundStyle(Color(hex: 0x283618))
                     .onAppear(perform: {

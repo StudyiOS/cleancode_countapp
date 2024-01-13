@@ -22,7 +22,7 @@ struct TapCountingView: View {
                 }
                 Spacer()
             }
-            .navigationTitle("탭 횟수")
+            .navigationTitle(String(localized: "title_tap_counting"))
             .navigationBarTitleDisplayMode(.inline)
         }
     }

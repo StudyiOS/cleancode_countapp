@@ -35,7 +35,7 @@ struct CoffeeMenuView: View {
                         }
                 }
             }
-            .navigationTitle("커피메뉴 카운팅")
+            .navigationTitle(String(localized: "title_coffee_menu_counting"))
             .navigationBarTitleDisplayMode(.inline)
         }
     }

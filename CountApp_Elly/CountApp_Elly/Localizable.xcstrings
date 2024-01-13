@@ -1,0 +1,95 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "%dpoint" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d점"
+          }
+        }
+      }
+    },
+    "+%lld" : {
+
+    },
+    "Choose Country" : {
+
+    },
+    "Detect Location" : {
+
+    },
+    "menu_americano" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아메리카노"
+          }
+        }
+      }
+    },
+    "menu_caramel_macchiato" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카라멜 마키아또"
+          }
+        }
+      }
+    },
+    "menu_hazelnut" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "헤이즐넛 라떼"
+          }
+        }
+      }
+    },
+    "menu_latte" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "라떼"
+          }
+        }
+      }
+    },
+    "menu_mocha" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카페 모카"
+          }
+        }
+      }
+    },
+    "title_coffee_menu_counting" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "커피메뉴 카운팅"
+          }
+        }
+      }
+    },
+    "title_tap_counting" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "탭 횟수"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

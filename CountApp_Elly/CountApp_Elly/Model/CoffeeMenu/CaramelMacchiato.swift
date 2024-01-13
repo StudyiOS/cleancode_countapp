@@ -12,7 +12,7 @@ class CaramelMacchiato: Menu {
     private(set) var tapCount: Int = 0
     
     func title() -> String {
-        return "카라멜 마키아또"
+        return String(localized: "menu_caramel_macchiato")
     }
     
     func icon() -> String {

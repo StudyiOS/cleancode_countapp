@@ -22,12 +22,12 @@ struct CounterAppView: View {
             CoffeeMenuView(viewStore: viewStore)
                 .tabItem {
                   Image(systemName: "cup.and.saucer")
-                  Text("커피메뉴 카운팅")
+                  Text(String(localized: "title_coffee_menu_counting"))
                 }
             TapCountingView(viewStore: viewStore)
                 .tabItem {
                   Image(systemName: "chart.bar")
-                  Text("탭 횟수")
+                  Text(String(localized: "title_tap_counting"))
                 }
             }
             .font(.headline)

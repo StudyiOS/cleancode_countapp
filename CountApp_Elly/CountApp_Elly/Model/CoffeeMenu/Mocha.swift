@@ -12,7 +12,7 @@ class Mocha: Menu {
     private(set) var tapCount: Int = 0
     
     func title() -> String {
-        return "카페 모카"
+        return String(localized: "menu_mocha")
     }
     
     func icon() -> String {
