@@ -83,6 +83,16 @@
         }
       }
     },
+    "text_reset" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "초기화"
+          }
+        }
+      }
+    },
     "text_reset_americano" : {
       "localizations" : {
         "ko" : {

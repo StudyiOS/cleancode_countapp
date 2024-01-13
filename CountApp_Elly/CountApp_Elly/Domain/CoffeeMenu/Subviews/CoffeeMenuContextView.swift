@@ -14,9 +14,9 @@ struct CoffeeMenuContextView: View {
     
     var body: some View {
         Button {
-            viewStore.send(.removeAllMenuCounting)
+            viewStore.send(.removeMenuCounting(index))
         } label: {
-            Text(String(localized: "text_all_reset"))
+            Text(String(localized: "text_reset"))
         }
 
         Button {
