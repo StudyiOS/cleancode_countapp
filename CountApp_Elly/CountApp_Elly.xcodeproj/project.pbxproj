@@ -15,6 +15,10 @@
 		453089222B52725700E199B9 /* CountApp_EllyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089212B52725700E199B9 /* CountApp_EllyUITests.swift */; };
 		453089242B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089232B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift */; };
 		453089322B5275CD00E199B9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 453089312B5275CD00E199B9 /* ComposableArchitecture */; };
+		453089362B5278A100E199B9 /* CoffeeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089352B5278A100E199B9 /* CoffeeMenuView.swift */; };
+		453089382B5278B000E199B9 /* CoffeeMenuStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089372B5278B000E199B9 /* CoffeeMenuStore.swift */; };
+		4530893A2B5278BE00E199B9 /* TapCountingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089392B5278BE00E199B9 /* TapCountingStore.swift */; };
+		4530893C2B5278C900E199B9 /* TapCountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530893B2B5278C900E199B9 /* TapCountingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		4530891D2B52725700E199B9 /* CountApp_EllyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountApp_EllyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		453089212B52725700E199B9 /* CountApp_EllyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountApp_EllyUITests.swift; sourceTree = "<group>"; };
 		453089232B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountApp_EllyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		453089352B5278A100E199B9 /* CoffeeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenuView.swift; sourceTree = "<group>"; };
+		453089372B5278B000E199B9 /* CoffeeMenuStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenuStore.swift; sourceTree = "<group>"; };
+		453089392B5278BE00E199B9 /* TapCountingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCountingStore.swift; sourceTree = "<group>"; };
+		4530893B2B5278C900E199B9 /* TapCountingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCountingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,8 @@
 		453089052B52725500E199B9 /* CountApp_Elly */ = {
 			isa = PBXGroup;
 			children = (
+				453089332B52785300E199B9 /* CoffeeMenu */,
+				453089342B52786000E199B9 /* TapCounting */,
 				453089062B52725500E199B9 /* CountApp_EllyApp.swift */,
 				453089082B52725500E199B9 /* ContentView.swift */,
 				4530890A2B52725700E199B9 /* Assets.xcassets */,
@@ -127,6 +137,24 @@
 				453089232B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift */,
 			);
 			path = CountApp_EllyUITests;
+			sourceTree = "<group>";
+		};
+		453089332B52785300E199B9 /* CoffeeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				453089352B5278A100E199B9 /* CoffeeMenuView.swift */,
+				453089372B5278B000E199B9 /* CoffeeMenuStore.swift */,
+			);
+			path = CoffeeMenu;
+			sourceTree = "<group>";
+		};
+		453089342B52786000E199B9 /* TapCounting */ = {
+			isa = PBXGroup;
+			children = (
+				453089392B5278BE00E199B9 /* TapCountingStore.swift */,
+				4530893B2B5278C900E199B9 /* TapCountingView.swift */,
+			);
+			path = TapCounting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453089362B5278A100E199B9 /* CoffeeMenuView.swift in Sources */,
 				453089092B52725500E199B9 /* ContentView.swift in Sources */,
+				453089382B5278B000E199B9 /* CoffeeMenuStore.swift in Sources */,
+				4530893C2B5278C900E199B9 /* TapCountingView.swift in Sources */,
 				453089072B52725500E199B9 /* CountApp_EllyApp.swift in Sources */,
+				4530893A2B5278BE00E199B9 /* TapCountingStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
