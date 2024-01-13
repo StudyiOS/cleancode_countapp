@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  CountApp
+//  LunchCounter
 //
 //  Created by Sam Sung on 1/13/24.
 //

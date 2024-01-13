@@ -1,6 +1,6 @@
 //
-//  CountAppApp.swift
-//  CountApp
+//  LunchCounterApp.swift
+//  LunchCounter
 //
 //  Created by Sam Sung on 1/13/24.
 //
@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct CountAppApp: App {
+struct LunchCounterApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,

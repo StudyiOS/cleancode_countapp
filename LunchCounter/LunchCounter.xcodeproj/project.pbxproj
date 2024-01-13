@@ -7,24 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F1C2EF222B52AA9100B8C43F /* CountAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF212B52AA9100B8C43F /* CountAppApp.swift */; };
-		F1C2EF242B52AA9100B8C43F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF232B52AA9100B8C43F /* ContentView.swift */; };
-		F1C2EF262B52AA9100B8C43F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF252B52AA9100B8C43F /* Item.swift */; };
-		F1C2EF282B52AA9300B8C43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C2EF272B52AA9300B8C43F /* Assets.xcassets */; };
-		F1C2EF2B2B52AA9300B8C43F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C2EF2A2B52AA9300B8C43F /* Preview Assets.xcassets */; };
+		F1C2EF462B52ADD300B8C43F /* LunchCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF452B52ADD300B8C43F /* LunchCounterApp.swift */; };
+		F1C2EF482B52ADD300B8C43F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF472B52ADD300B8C43F /* ContentView.swift */; };
+		F1C2EF4A2B52ADD300B8C43F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF492B52ADD300B8C43F /* Item.swift */; };
+		F1C2EF4C2B52ADD400B8C43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C2EF4B2B52ADD400B8C43F /* Assets.xcassets */; };
+		F1C2EF4F2B52ADD400B8C43F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C2EF4E2B52ADD400B8C43F /* Preview Assets.xcassets */; };
+		F1C2EF582B52AE0000B8C43F /* LunchRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF562B52AE0000B8C43F /* LunchRecord.swift */; };
+		F1C2EF592B52AE0000B8C43F /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF572B52AE0000B8C43F /* FoodType.swift */; };
+		F1C2EF5C2B52AE3000B8C43F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF5B2B52AE3000B8C43F /* MainView.swift */; };
+		F1C2EF602B52AE9500B8C43F /* AddFoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF5F2B52AE9500B8C43F /* AddFoodButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F1C2EF1E2B52AA9100B8C43F /* CountApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1C2EF212B52AA9100B8C43F /* CountAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountAppApp.swift; sourceTree = "<group>"; };
-		F1C2EF232B52AA9100B8C43F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F1C2EF252B52AA9100B8C43F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		F1C2EF272B52AA9300B8C43F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F1C2EF2A2B52AA9300B8C43F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1C2EF422B52ADD300B8C43F /* LunchCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C2EF452B52ADD300B8C43F /* LunchCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchCounterApp.swift; sourceTree = "<group>"; };
+		F1C2EF472B52ADD300B8C43F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1C2EF492B52ADD300B8C43F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F1C2EF4B2B52ADD400B8C43F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1C2EF4E2B52ADD400B8C43F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1C2EF562B52AE0000B8C43F /* LunchRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchRecord.swift; sourceTree = "<group>"; };
+		F1C2EF572B52AE0000B8C43F /* FoodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
+		F1C2EF5B2B52AE3000B8C43F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F1C2EF5F2B52AE9500B8C43F /* AddFoodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F1C2EF1B2B52AA9100B8C43F /* Frameworks */ = {
+		F1C2EF3F2B52ADD300B8C43F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,78 +42,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F1C2EF152B52AA9100B8C43F = {
+		F1C2EF392B52ADD300B8C43F = {
 			isa = PBXGroup;
 			children = (
-				F1C2EF202B52AA9100B8C43F /* CountApp */,
-				F1C2EF1F2B52AA9100B8C43F /* Products */,
+				F1C2EF442B52ADD300B8C43F /* LunchCounter */,
+				F1C2EF432B52ADD300B8C43F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F1C2EF1F2B52AA9100B8C43F /* Products */ = {
+		F1C2EF432B52ADD300B8C43F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F1C2EF1E2B52AA9100B8C43F /* CountApp.app */,
+				F1C2EF422B52ADD300B8C43F /* LunchCounter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F1C2EF202B52AA9100B8C43F /* CountApp */ = {
+		F1C2EF442B52ADD300B8C43F /* LunchCounter */ = {
 			isa = PBXGroup;
 			children = (
-				F1C2EF212B52AA9100B8C43F /* CountAppApp.swift */,
-				F1C2EF232B52AA9100B8C43F /* ContentView.swift */,
-				F1C2EF252B52AA9100B8C43F /* Item.swift */,
-				F1C2EF272B52AA9300B8C43F /* Assets.xcassets */,
-				F1C2EF292B52AA9300B8C43F /* Preview Content */,
+				F1C2EF452B52ADD300B8C43F /* LunchCounterApp.swift */,
+				F1C2EF552B52AE0000B8C43F /* Model */,
+				F1C2EF5A2B52AE1800B8C43F /* Views */,
+				F1C2EF472B52ADD300B8C43F /* ContentView.swift */,
+				F1C2EF492B52ADD300B8C43F /* Item.swift */,
+				F1C2EF4B2B52ADD400B8C43F /* Assets.xcassets */,
+				F1C2EF4D2B52ADD400B8C43F /* Preview Content */,
 			);
-			path = CountApp;
+			path = LunchCounter;
 			sourceTree = "<group>";
 		};
-		F1C2EF292B52AA9300B8C43F /* Preview Content */ = {
+		F1C2EF4D2B52ADD400B8C43F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				F1C2EF2A2B52AA9300B8C43F /* Preview Assets.xcassets */,
+				F1C2EF4E2B52ADD400B8C43F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1C2EF552B52AE0000B8C43F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1C2EF562B52AE0000B8C43F /* LunchRecord.swift */,
+				F1C2EF572B52AE0000B8C43F /* FoodType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1C2EF5A2B52AE1800B8C43F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1C2EF5D2B52AE6700B8C43F /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1C2EF5D2B52AE6700B8C43F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F1C2EF5B2B52AE3000B8C43F /* MainView.swift */,
+				F1C2EF5E2B52AE7800B8C43F /* Components */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F1C2EF5E2B52AE7800B8C43F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F1C2EF5F2B52AE9500B8C43F /* AddFoodButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F1C2EF1D2B52AA9100B8C43F /* CountApp */ = {
+		F1C2EF412B52ADD300B8C43F /* LunchCounter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1C2EF2E2B52AA9300B8C43F /* Build configuration list for PBXNativeTarget "CountApp" */;
+			buildConfigurationList = F1C2EF522B52ADD400B8C43F /* Build configuration list for PBXNativeTarget "LunchCounter" */;
 			buildPhases = (
-				F1C2EF1A2B52AA9100B8C43F /* Sources */,
-				F1C2EF1B2B52AA9100B8C43F /* Frameworks */,
-				F1C2EF1C2B52AA9100B8C43F /* Resources */,
+				F1C2EF3E2B52ADD300B8C43F /* Sources */,
+				F1C2EF3F2B52ADD300B8C43F /* Frameworks */,
+				F1C2EF402B52ADD300B8C43F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CountApp;
-			productName = CountApp;
-			productReference = F1C2EF1E2B52AA9100B8C43F /* CountApp.app */;
+			name = LunchCounter;
+			productName = LunchCounter;
+			productReference = F1C2EF422B52ADD300B8C43F /* LunchCounter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F1C2EF162B52AA9100B8C43F /* Project object */ = {
+		F1C2EF3A2B52ADD300B8C43F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					F1C2EF1D2B52AA9100B8C43F = {
+					F1C2EF412B52ADD300B8C43F = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = F1C2EF192B52AA9100B8C43F /* Build configuration list for PBXProject "CountApp" */;
+			buildConfigurationList = F1C2EF3D2B52ADD300B8C43F /* Build configuration list for PBXProject "LunchCounter" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +157,47 @@
 				en,
 				Base,
 			);
-			mainGroup = F1C2EF152B52AA9100B8C43F;
-			productRefGroup = F1C2EF1F2B52AA9100B8C43F /* Products */;
+			mainGroup = F1C2EF392B52ADD300B8C43F;
+			productRefGroup = F1C2EF432B52ADD300B8C43F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1C2EF1D2B52AA9100B8C43F /* CountApp */,
+				F1C2EF412B52ADD300B8C43F /* LunchCounter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F1C2EF1C2B52AA9100B8C43F /* Resources */ = {
+		F1C2EF402B52ADD300B8C43F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C2EF2B2B52AA9300B8C43F /* Preview Assets.xcassets in Resources */,
-				F1C2EF282B52AA9300B8C43F /* Assets.xcassets in Resources */,
+				F1C2EF4F2B52ADD400B8C43F /* Preview Assets.xcassets in Resources */,
+				F1C2EF4C2B52ADD400B8C43F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F1C2EF1A2B52AA9100B8C43F /* Sources */ = {
+		F1C2EF3E2B52ADD300B8C43F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C2EF242B52AA9100B8C43F /* ContentView.swift in Sources */,
-				F1C2EF262B52AA9100B8C43F /* Item.swift in Sources */,
-				F1C2EF222B52AA9100B8C43F /* CountAppApp.swift in Sources */,
+				F1C2EF592B52AE0000B8C43F /* FoodType.swift in Sources */,
+				F1C2EF5C2B52AE3000B8C43F /* MainView.swift in Sources */,
+				F1C2EF482B52ADD300B8C43F /* ContentView.swift in Sources */,
+				F1C2EF582B52AE0000B8C43F /* LunchRecord.swift in Sources */,
+				F1C2EF4A2B52ADD300B8C43F /* Item.swift in Sources */,
+				F1C2EF602B52AE9500B8C43F /* AddFoodButton.swift in Sources */,
+				F1C2EF462B52ADD300B8C43F /* LunchCounterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F1C2EF2C2B52AA9300B8C43F /* Debug */ = {
+		F1C2EF502B52ADD400B8C43F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +260,7 @@
 			};
 			name = Debug;
 		};
-		F1C2EF2D2B52AA9300B8C43F /* Release */ = {
+		F1C2EF512B52ADD400B8C43F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,14 +316,14 @@
 			};
 			name = Release;
 		};
-		F1C2EF2F2B52AA9300B8C43F /* Debug */ = {
+		F1C2EF532B52ADD400B8C43F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CountApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LunchCounter/Preview Content\"";
 				DEVELOPMENT_TEAM = JY9QH7G8BB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -289,7 +337,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SamSung.CountApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamSung.LunchCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -297,14 +345,14 @@
 			};
 			name = Debug;
 		};
-		F1C2EF302B52AA9300B8C43F /* Release */ = {
+		F1C2EF542B52ADD400B8C43F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CountApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LunchCounter/Preview Content\"";
 				DEVELOPMENT_TEAM = JY9QH7G8BB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -318,7 +366,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SamSung.CountApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamSung.LunchCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,25 +377,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F1C2EF192B52AA9100B8C43F /* Build configuration list for PBXProject "CountApp" */ = {
+		F1C2EF3D2B52ADD300B8C43F /* Build configuration list for PBXProject "LunchCounter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1C2EF2C2B52AA9300B8C43F /* Debug */,
-				F1C2EF2D2B52AA9300B8C43F /* Release */,
+				F1C2EF502B52ADD400B8C43F /* Debug */,
+				F1C2EF512B52ADD400B8C43F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1C2EF2E2B52AA9300B8C43F /* Build configuration list for PBXNativeTarget "CountApp" */ = {
+		F1C2EF522B52ADD400B8C43F /* Build configuration list for PBXNativeTarget "LunchCounter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1C2EF2F2B52AA9300B8C43F /* Debug */,
-				F1C2EF302B52AA9300B8C43F /* Release */,
+				F1C2EF532B52ADD400B8C43F /* Debug */,
+				F1C2EF542B52ADD400B8C43F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F1C2EF162B52AA9100B8C43F /* Project object */;
+	rootObject = F1C2EF3A2B52ADD300B8C43F /* Project object */;
 }
