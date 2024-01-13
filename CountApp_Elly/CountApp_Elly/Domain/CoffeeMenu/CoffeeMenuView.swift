@@ -9,13 +9,7 @@ import SwiftUI
 import ComposableArchitecture
 
 struct CoffeeMenuView: View {
-    let store: Store<CoffeeMenuStore.State, CoffeeMenuStore.Action>
-    @ObservedObject var viewStore: ViewStore<CoffeeMenuStore.State, CoffeeMenuStore.Action>
-    
-    public init(store: Store<CoffeeMenuStore.State, CoffeeMenuStore.Action>) {
-        self.store = store
-        viewStore = ViewStore(store, observe: { $0 })
-    }
+    @ObservedObject var viewStore: ViewStore<CounterAppStore.State, CounterAppStore.Action>
     
     var body: some View {
         NavigationView {

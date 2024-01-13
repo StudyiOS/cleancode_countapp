@@ -1,5 +1,5 @@
 //
-//  CoffeeMenuStore.swift
+//  CounterAppStore.swift
 //  CountApp_Elly
 //
 //  Created by elly on 1/13/24.
@@ -8,14 +8,14 @@
 import ComposableArchitecture
 
 @Reducer
-struct CoffeeMenuStore {
+struct CounterAppStore {
     struct State: Equatable {
         var listOfMenu: [any Menu] = [
             Americano(), Latte(), CaramelMacchiato(), Mocha(), Hazelnut()
         ]
         var indexOfTapped: Int = 0
         var isShowMenuCounting: Bool = false
-        static func == (lhs: CoffeeMenuStore.State, rhs: CoffeeMenuStore.State) -> Bool {
+        static func == (lhs: CounterAppStore.State, rhs: CounterAppStore.State) -> Bool {
             return false
         }
     }

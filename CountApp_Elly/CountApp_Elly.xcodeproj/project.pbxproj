@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		453089072B52725500E199B9 /* CountApp_EllyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089062B52725500E199B9 /* CountApp_EllyApp.swift */; };
-		453089092B52725500E199B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089082B52725500E199B9 /* ContentView.swift */; };
+		453089092B52725500E199B9 /* CounterAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089082B52725500E199B9 /* CounterAppView.swift */; };
 		4530890B2B52725700E199B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4530890A2B52725700E199B9 /* Assets.xcassets */; };
 		4530890E2B52725700E199B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4530890D2B52725700E199B9 /* Preview Assets.xcassets */; };
 		453089182B52725700E199B9 /* CountApp_EllyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089172B52725700E199B9 /* CountApp_EllyTests.swift */; };
@@ -16,9 +16,17 @@
 		453089242B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089232B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift */; };
 		453089322B5275CD00E199B9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 453089312B5275CD00E199B9 /* ComposableArchitecture */; };
 		453089362B5278A100E199B9 /* CoffeeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089352B5278A100E199B9 /* CoffeeMenuView.swift */; };
-		453089382B5278B000E199B9 /* CoffeeMenuStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089372B5278B000E199B9 /* CoffeeMenuStore.swift */; };
-		4530893A2B5278BE00E199B9 /* TapCountingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089392B5278BE00E199B9 /* TapCountingStore.swift */; };
+		453089382B5278B000E199B9 /* CounterAppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089372B5278B000E199B9 /* CounterAppStore.swift */; };
 		4530893C2B5278C900E199B9 /* TapCountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530893B2B5278C900E199B9 /* TapCountingView.swift */; };
+		453089402B527AAF00E199B9 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530893F2B527AAF00E199B9 /* Menu.swift */; };
+		453089432B527B2F00E199B9 /* Americano.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089422B527B2F00E199B9 /* Americano.swift */; };
+		453089452B527F8900E199B9 /* Mocha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089442B527F8900E199B9 /* Mocha.swift */; };
+		453089472B527FBD00E199B9 /* Hazelnut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089462B527FBD00E199B9 /* Hazelnut.swift */; };
+		453089492B527FD500E199B9 /* Latte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089482B527FD500E199B9 /* Latte.swift */; };
+		4530894B2B527FF700E199B9 /* CaramelMacchiato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530894A2B527FF700E199B9 /* CaramelMacchiato.swift */; };
+		4530894D2B52874E00E199B9 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530894C2B52874E00E199B9 /* MenuItemView.swift */; };
+		453089512B52974700E199B9 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089502B52974700E199B9 /* Color+.swift */; };
+		4539469E2B52B37D007FE780 /* CountingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4539469D2B52B37D007FE780 /* CountingItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +49,7 @@
 /* Begin PBXFileReference section */
 		453089032B52725500E199B9 /* CountApp_Elly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountApp_Elly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		453089062B52725500E199B9 /* CountApp_EllyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountApp_EllyApp.swift; sourceTree = "<group>"; };
-		453089082B52725500E199B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		453089082B52725500E199B9 /* CounterAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAppView.swift; sourceTree = "<group>"; };
 		4530890A2B52725700E199B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4530890D2B52725700E199B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		453089132B52725700E199B9 /* CountApp_EllyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountApp_EllyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,9 +58,17 @@
 		453089212B52725700E199B9 /* CountApp_EllyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountApp_EllyUITests.swift; sourceTree = "<group>"; };
 		453089232B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountApp_EllyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		453089352B5278A100E199B9 /* CoffeeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenuView.swift; sourceTree = "<group>"; };
-		453089372B5278B000E199B9 /* CoffeeMenuStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenuStore.swift; sourceTree = "<group>"; };
-		453089392B5278BE00E199B9 /* TapCountingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCountingStore.swift; sourceTree = "<group>"; };
+		453089372B5278B000E199B9 /* CounterAppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAppStore.swift; sourceTree = "<group>"; };
 		4530893B2B5278C900E199B9 /* TapCountingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCountingView.swift; sourceTree = "<group>"; };
+		4530893F2B527AAF00E199B9 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		453089422B527B2F00E199B9 /* Americano.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Americano.swift; sourceTree = "<group>"; };
+		453089442B527F8900E199B9 /* Mocha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocha.swift; sourceTree = "<group>"; };
+		453089462B527FBD00E199B9 /* Hazelnut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hazelnut.swift; sourceTree = "<group>"; };
+		453089482B527FD500E199B9 /* Latte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latte.swift; sourceTree = "<group>"; };
+		4530894A2B527FF700E199B9 /* CaramelMacchiato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaramelMacchiato.swift; sourceTree = "<group>"; };
+		4530894C2B52874E00E199B9 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		453089502B52974700E199B9 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		4539469D2B52B37D007FE780 /* CountingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +120,10 @@
 		453089052B52725500E199B9 /* CountApp_Elly */ = {
 			isa = PBXGroup;
 			children = (
-				453089332B52785300E199B9 /* CoffeeMenu */,
-				453089342B52786000E199B9 /* TapCounting */,
 				453089062B52725500E199B9 /* CountApp_EllyApp.swift */,
-				453089082B52725500E199B9 /* ContentView.swift */,
+				4530893D2B527A7000E199B9 /* Model */,
+				4530893E2B527A9400E199B9 /* Domain */,
+				4530894F2B52972600E199B9 /* Extension */,
 				4530890A2B52725700E199B9 /* Assets.xcassets */,
 				4530890C2B52725700E199B9 /* Preview Content */,
 			);
@@ -143,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				453089352B5278A100E199B9 /* CoffeeMenuView.swift */,
-				453089372B5278B000E199B9 /* CoffeeMenuStore.swift */,
+				4530894E2B52875200E199B9 /* Subviews */,
 			);
 			path = CoffeeMenu;
 			sourceTree = "<group>";
@@ -151,10 +167,66 @@
 		453089342B52786000E199B9 /* TapCounting */ = {
 			isa = PBXGroup;
 			children = (
-				453089392B5278BE00E199B9 /* TapCountingStore.swift */,
 				4530893B2B5278C900E199B9 /* TapCountingView.swift */,
 			);
 			path = TapCounting;
+			sourceTree = "<group>";
+		};
+		4530893D2B527A7000E199B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				453089412B527B1900E199B9 /* CoffeeMenu */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4530893E2B527A9400E199B9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4539469F2B52BA32007FE780 /* Home */,
+				453089332B52785300E199B9 /* CoffeeMenu */,
+				453089342B52786000E199B9 /* TapCounting */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		453089412B527B1900E199B9 /* CoffeeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4530893F2B527AAF00E199B9 /* Menu.swift */,
+				453089422B527B2F00E199B9 /* Americano.swift */,
+				453089482B527FD500E199B9 /* Latte.swift */,
+				4530894A2B527FF700E199B9 /* CaramelMacchiato.swift */,
+				453089442B527F8900E199B9 /* Mocha.swift */,
+				453089462B527FBD00E199B9 /* Hazelnut.swift */,
+			);
+			path = CoffeeMenu;
+			sourceTree = "<group>";
+		};
+		4530894E2B52875200E199B9 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4530894C2B52874E00E199B9 /* MenuItemView.swift */,
+				4539469D2B52B37D007FE780 /* CountingItemView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		4530894F2B52972600E199B9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				453089502B52974700E199B9 /* Color+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4539469F2B52BA32007FE780 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				453089082B52725500E199B9 /* CounterAppView.swift */,
+				453089372B5278B000E199B9 /* CounterAppStore.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,12 +365,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453089492B527FD500E199B9 /* Latte.swift in Sources */,
 				453089362B5278A100E199B9 /* CoffeeMenuView.swift in Sources */,
-				453089092B52725500E199B9 /* ContentView.swift in Sources */,
-				453089382B5278B000E199B9 /* CoffeeMenuStore.swift in Sources */,
+				4530894D2B52874E00E199B9 /* MenuItemView.swift in Sources */,
+				453089432B527B2F00E199B9 /* Americano.swift in Sources */,
+				4530894B2B527FF700E199B9 /* CaramelMacchiato.swift in Sources */,
+				453089092B52725500E199B9 /* CounterAppView.swift in Sources */,
+				453089402B527AAF00E199B9 /* Menu.swift in Sources */,
+				453089512B52974700E199B9 /* Color+.swift in Sources */,
+				453089382B5278B000E199B9 /* CounterAppStore.swift in Sources */,
+				4539469E2B52B37D007FE780 /* CountingItemView.swift in Sources */,
 				4530893C2B5278C900E199B9 /* TapCountingView.swift in Sources */,
+				453089472B527FBD00E199B9 /* Hazelnut.swift in Sources */,
 				453089072B52725500E199B9 /* CountApp_EllyApp.swift in Sources */,
-				4530893A2B5278BE00E199B9 /* TapCountingStore.swift in Sources */,
+				453089452B527F8900E199B9 /* Mocha.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@ import SwiftUI
 import ComposableArchitecture
 
 struct MenuItemView: View {
-    @ObservedObject var viewStore: ViewStore<CoffeeMenuStore.State, CoffeeMenuStore.Action>
+    @ObservedObject var viewStore: ViewStore<CounterAppStore.State, CounterAppStore.Action>
     var index: Int
     private var menu: any Menu {
         return viewStore.listOfMenu[index]
