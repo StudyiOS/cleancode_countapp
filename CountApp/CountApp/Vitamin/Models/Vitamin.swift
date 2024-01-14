@@ -10,15 +10,17 @@ import ComposableArchitecture
 
 @Reducer
 struct Vitamin {
+
     struct State: Equatable, Identifiable {
         let id: UUID
         let name: String
+        let color: Color
         var count: Int = 0
     }
 
     enum Action: BindableAction, Sendable {
         case binding(BindingAction<State>)
-        case tapped
+        case tapped(UUID)
     }
 
     var body: some Reducer<State, Action> {
@@ -28,6 +30,9 @@ struct Vitamin {
                 case .binding:
                     return .none
                 case .tapped:
+                    // TODO: (?) 뭐임
+                    // state.count += 1
+                    print("[Vitamin] tapped : \(state.name)")
                     return .none
             }
         }

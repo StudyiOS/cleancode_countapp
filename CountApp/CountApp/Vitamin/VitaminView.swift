@@ -15,7 +15,7 @@ struct VitaminView: View {
 
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
-            VStack {
+            VStack(spacing: 30) {
                 ForEachStore(store.scope(state: \.vitamins,
                                          action: \.vitamins)) { store in
                         VitaminCellView(store: store)
