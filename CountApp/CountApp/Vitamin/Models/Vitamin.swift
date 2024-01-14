@@ -20,7 +20,8 @@ struct Vitamin {
 
     enum Action: BindableAction, Sendable {
         case binding(BindingAction<State>)
-        case tapped(UUID)
+        case increaseCount(UUID, Int)
+        case decreaseToZero(UUID)
     }
 
     var body: some Reducer<State, Action> {
@@ -29,10 +30,9 @@ struct Vitamin {
             switch action {
                 case .binding:
                     return .none
-                case .tapped:
-                    // TODO: (?) 뭐임
-                    // state.count += 1
-                    print("[Vitamin] tapped : \(state.name)")
+                case .increaseCount:
+                    return .none
+                case .decreaseToZero:
                     return .none
             }
         }

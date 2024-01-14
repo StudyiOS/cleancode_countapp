@@ -38,9 +38,15 @@ struct Vitamins {
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
-                case .vitamins(.element(id: _, action: .tapped(let id))):
-                    if var selectedVitamin = state.vitamins.first(where: { $0.id == id }) {
-                        selectedVitamin.count += 1
+                case .vitamins(.element(id: _, action: .increaseCount(let id, let count))):
+                    if var selectedVitamin = state.vitamins[id: id] {
+                        selectedVitamin.count += count
+                        state.vitamins.updateOrAppend(selectedVitamin)
+                    }
+                    return .none
+                case .vitamins(.element(id: _, action: .decreaseToZero(let id))):
+                    if var selectedVitamin = state.vitamins[id: id] {
+                        selectedVitamin.count = 0
                         state.vitamins.updateOrAppend(selectedVitamin)
                     }
                     return .none
@@ -49,5 +55,4 @@ struct Vitamins {
             }
         }
     }
-
 }

@@ -15,11 +15,45 @@ struct VitaminCellView: View {
     var body: some View {
         WithViewStore(self.store, observe: { $0 }) { viewStore in
             HStack {
+                Image(systemName: "pills.fill")
                 Text(viewStore.name)
+                    .font(.subheadline)
             }
             .vitaminCell(color: viewStore.color)
+            .contextMenu {
+                menuItems(with: viewStore)
+            }
             .onTapGesture {
-                viewStore.send(.tapped(viewStore.id))
+                viewStore.send(.increaseCount(viewStore.id, 1))
+            }
+            .padding(.horizontal, 40)
+        }
+    }
+}
+
+private extension VitaminCellView {
+    @ViewBuilder
+    func menuItems(with viewStore: ViewStore<Vitamin.State, Vitamin.Action>) -> some View {
+        Group {
+            Button(
+                role: .destructive,
+                action: {
+                    viewStore.send(.decreaseToZero(viewStore.state.id))
+                }, label: {
+                    Text("모두 초기화")
+                }
+            )
+
+            Button("+1") {
+                viewStore.send(.increaseCount(viewStore.state.id, 1))
+            }
+
+            Button("+5") {
+                viewStore.send(.increaseCount(viewStore.state.id, 5))
+            }
+
+            Button("+10") {
+                viewStore.send(.increaseCount(viewStore.state.id, 10))
             }
         }
     }
@@ -43,11 +77,15 @@ struct VitaminCell: ViewModifier {
     let color: Color
     func body(content: Content) -> some View {
         content
-            .contentShape(Rectangle())
             .frame(maxWidth: .infinity, maxHeight: 100)
+            .contentShape(.contextMenuPreview, // contextmenu radius
+                          RoundedRectangle(cornerRadius: 25))
             .background(color)
             .clipShape(RoundedRectangle(cornerRadius: 25))
-            .padding(.horizontal, 40)
+            .overlay {
+                RoundedRectangle(cornerRadius: 25)
+                    .stroke(Color.gray.opacity(0.5), lineWidth: 0.5)
+            }
     }
 }
 
