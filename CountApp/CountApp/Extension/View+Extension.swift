@@ -27,7 +27,7 @@ struct VitaminCell: ViewModifier {
 }
 
 extension View {
-    func vitaminCell(color: Color, height: CGFloat = 70) -> some View {
+    func vitaminCellFrame(color: Color, height: CGFloat = 70) -> some View {
         modifier(VitaminCell(color: color, height: height))
     }
 }

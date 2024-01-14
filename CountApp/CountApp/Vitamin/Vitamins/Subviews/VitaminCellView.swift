@@ -31,7 +31,7 @@ struct VitaminCellView: View {
                 pillImage
                 vitaminName(with: viewStore.name)
             }
-            .vitaminCell(color: viewStore.color)
+            .vitaminCellFrame(color: viewStore.color)
             .overlay(alignment: .trailing) {
                 vitamineCount(count: viewStore.count.toString)
                     .opacity(isShowingCount ? 1 : 0)
@@ -54,6 +54,7 @@ struct VitaminCellView: View {
 }
 
 private extension VitaminCellView {
+    typealias VitaminStore = ViewStore<Vitamin.State, Vitamin.Action>
 
     var pillImage: Image {
         Image(systemName: "pills.fill")
@@ -68,28 +69,31 @@ private extension VitaminCellView {
         Text("+ " + count)
     }
 
-    func menuItems(with viewStore: ViewStore<Vitamin.State, Vitamin.Action>) -> some View {
-        Group {
-            Button(
-                role: .destructive,
-                action: {
-                    viewStore.send(.decreaseToZero(viewStore.state.id))
-                }, label: {
-                    Text("모두 초기화")
-                }
-            )
+    func menuItems(with viewStore: VitaminStore) -> some View {
+        let increaseSteps = [1, 5, 10]
+        return Group {
+            resetAllButton(with: viewStore)
 
-            Button("+1") {
-                viewStore.send(.increaseCount(viewStore.state.id, 1))
+            ForEach(0..<increaseSteps.count, id: \.self) {
+                increaseButton(with: viewStore, step: increaseSteps[$0])
             }
+        }
+    }
 
-            Button("+5") {
-                viewStore.send(.increaseCount(viewStore.state.id, 5))
+    func resetAllButton(with viewStore: VitaminStore) -> Button<Text> {
+        Button(
+            role: .destructive,
+            action: {
+                viewStore.send(.decreaseToZero(viewStore.state.id))
+            }, label: {
+                Text("모두 초기화")
             }
+        )
+    }
 
-            Button("+10") {
-                viewStore.send(.increaseCount(viewStore.state.id, 10))
-            }
+    func increaseButton(with viewStore: VitaminStore, step: Int) -> Button<Text> {
+        Button("+" + step.toString) {
+            viewStore.send(.increaseCount(viewStore.state.id, step))
         }
     }
 }

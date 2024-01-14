@@ -20,7 +20,7 @@ struct StatisticsCellView: View {
                 vitaminName(with: viewStore.name)
                 vitamineCount(count: viewStore.count.toString)
             }
-            .vitaminCell(color: viewStore.color, height: 50)
+            .vitaminCellFrame(color: viewStore.color, height: 50)
         }
         .padding(.horizontal, 40)
     }

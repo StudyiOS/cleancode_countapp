@@ -49,28 +49,14 @@ private extension StatisticsView {
                 }
             )
 
-            Button("비타민 C 초기화") {
-                viewStore.send(.resetVitamins(name: "비타민 C"))
-            }
-
-            Button("비타민 D 초기화") {
-                viewStore.send(.resetVitamins(name: "비타민 C"))
-            }
-
-            Button("비타민 B 초기화") {
-                viewStore.send(.resetVitamins(name: "비타민 C"))
-            }
-
-            Button("루테인 초기화") {
-                viewStore.send(.resetVitamins(name: "루테인"))
-            }
-
-            Button("유산균 초기화") {
-                viewStore.send(.resetVitamins(name: "유산균"))
+            ForEach(viewStore.state.vitamins) {
+                let name = $0.name
+                Button("\(name) 초기화") {
+                    viewStore.send(.resetVitamins(name: name))
+                }
             }
         }
     }
-
 }
 
 #Preview {
