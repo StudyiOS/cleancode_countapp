@@ -12,13 +12,13 @@ struct MainTabView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            MainView()
+            MainView(dataManager: DataManager.shared)
                 .modifier(TabViewItem(index: 0,
                                       title: "Food",
                                       systemImageName: "fork.knife",
                                       selectedTab: $selectedTab))
             
-            MainView()
+            LunchGraphView()
                 .modifier(TabViewItem(index: 1, 
                                       title: "Chart",
                                       systemImageName: "chart.bar.xaxis",

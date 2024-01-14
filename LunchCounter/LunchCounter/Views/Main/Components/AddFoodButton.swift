@@ -10,11 +10,10 @@ import SwiftUI
 struct AddFoodButton: View {
     let type: FoodType
     var action: (() -> Void)
+    var longPressAction: (() -> Void)
     
     var body: some View {
-        Button(action: {
-            action()
-        }, label: {
+        Button(action: { }) {
             Circle()
                 .frame(width: 60, height: 60)
                 .foregroundStyle(type.themeColor)
@@ -23,12 +22,27 @@ struct AddFoodButton: View {
                         .fontWeight(.bold)
                         .foregroundStyle(.white)
                 }
-        })
+        }
+        .highPriorityGesture(
+            TapGesture()
+                .onEnded { _ in
+                    action()
+                }
+        )
+        .gesture(
+            LongPressGesture(minimumDuration: 0.2)
+                .onEnded ({ _ in
+                    longPressAction()
+                })
+        )
+
     }
 }
 
 #Preview {
     AddFoodButton(type: .asian) {
         print("Did tapped")
+    } longPressAction: {
+        print("Long press")
     }
 }

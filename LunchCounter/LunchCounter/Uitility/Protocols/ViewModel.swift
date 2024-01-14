@@ -11,5 +11,6 @@ import Combine
 protocol ViewModel: ObservableObject {
     associatedtype Action
     
+    var dataManager: DataManager { get }
     func bindAction(_ action: Action)
 }

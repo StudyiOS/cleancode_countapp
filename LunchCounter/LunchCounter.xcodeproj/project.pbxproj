@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F1C2EF462B52ADD300B8C43F /* LunchCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF452B52ADD300B8C43F /* LunchCounterApp.swift */; };
-		F1C2EF482B52ADD300B8C43F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF472B52ADD300B8C43F /* ContentView.swift */; };
-		F1C2EF4A2B52ADD300B8C43F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF492B52ADD300B8C43F /* Item.swift */; };
 		F1C2EF4C2B52ADD400B8C43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C2EF4B2B52ADD400B8C43F /* Assets.xcassets */; };
 		F1C2EF4F2B52ADD400B8C43F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C2EF4E2B52ADD400B8C43F /* Preview Assets.xcassets */; };
 		F1C2EF582B52AE0000B8C43F /* LunchRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF562B52AE0000B8C43F /* LunchRecord.swift */; };
@@ -27,13 +25,13 @@
 		F1C2EF782B53BC0B00B8C43F /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF772B53BC0B00B8C43F /* ToastView.swift */; };
 		F1C2EF7B2B53BE7D00B8C43F /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF7A2B53BE7D00B8C43F /* ToastModifier.swift */; };
 		F1C2EF7F2B53C01500B8C43F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF7E2B53C01500B8C43F /* View+Extension.swift */; };
+		F1C2EF812B53C9B300B8C43F /* LunchGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF802B53C9B300B8C43F /* LunchGraphView.swift */; };
+		F1C2EF842B53CCA100B8C43F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF832B53CCA100B8C43F /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1C2EF422B52ADD300B8C43F /* LunchCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C2EF452B52ADD300B8C43F /* LunchCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchCounterApp.swift; sourceTree = "<group>"; };
-		F1C2EF472B52ADD300B8C43F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F1C2EF492B52ADD300B8C43F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F1C2EF4B2B52ADD400B8C43F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1C2EF4E2B52ADD400B8C43F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1C2EF562B52AE0000B8C43F /* LunchRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchRecord.swift; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		F1C2EF772B53BC0B00B8C43F /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		F1C2EF7A2B53BE7D00B8C43F /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
 		F1C2EF7E2B53C01500B8C43F /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		F1C2EF802B53C9B300B8C43F /* LunchGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchGraphView.swift; sourceTree = "<group>"; };
+		F1C2EF832B53CCA100B8C43F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				F1C2EF452B52ADD300B8C43F /* LunchCounterApp.swift */,
+				F1C2EF822B53CC8700B8C43F /* Helpers */,
 				F1C2EF552B52AE0000B8C43F /* Model */,
 				F1C2EF632B53ADB100B8C43F /* ViewModels */,
 				F1C2EF5A2B52AE1800B8C43F /* Views */,
 				F1C2EF7C2B53BFF500B8C43F /* Uitility */,
-				F1C2EF472B52ADD300B8C43F /* ContentView.swift */,
-				F1C2EF492B52ADD300B8C43F /* Item.swift */,
 				F1C2EF4B2B52ADD400B8C43F /* Assets.xcassets */,
 				F1C2EF4D2B52ADD400B8C43F /* Preview Content */,
 			);
@@ -181,6 +180,7 @@
 		F1C2EF752B53BBD700B8C43F /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				F1C2EF802B53C9B300B8C43F /* LunchGraphView.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -209,6 +209,14 @@
 				F1C2EF7E2B53C01500B8C43F /* View+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F1C2EF822B53CC8700B8C43F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F1C2EF832B53CCA100B8C43F /* DataManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,18 +290,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C2EF782B53BC0B00B8C43F /* ToastView.swift in Sources */,
+				F1C2EF842B53CCA100B8C43F /* DataManager.swift in Sources */,
 				F1C2EF6A2B53B35F00B8C43F /* MainTabView.swift in Sources */,
 				F1C2EF682B53AE3A00B8C43F /* ViewModel.swift in Sources */,
 				F1C2EF592B52AE0000B8C43F /* FoodType.swift in Sources */,
 				F1C2EF712B53B8D500B8C43F /* Toast.swift in Sources */,
 				F1C2EF5C2B52AE3000B8C43F /* MainView.swift in Sources */,
-				F1C2EF482B52ADD300B8C43F /* ContentView.swift in Sources */,
 				F1C2EF622B53ADA100B8C43F /* Postition.swift in Sources */,
 				F1C2EF7B2B53BE7D00B8C43F /* ToastModifier.swift in Sources */,
 				F1C2EF582B52AE0000B8C43F /* LunchRecord.swift in Sources */,
-				F1C2EF4A2B52ADD300B8C43F /* Item.swift in Sources */,
 				F1C2EF602B52AE9500B8C43F /* AddFoodButton.swift in Sources */,
 				F1C2EF742B53B9CC00B8C43F /* ToastStyle.swift in Sources */,
+				F1C2EF812B53C9B300B8C43F /* LunchGraphView.swift in Sources */,
 				F1C2EF6D2B53B3C900B8C43F /* TabViewItem.swift in Sources */,
 				F1C2EF462B52ADD300B8C43F /* LunchCounterApp.swift in Sources */,
 				F1C2EF652B53ADC500B8C43F /* MainViewModel.swift in Sources */,

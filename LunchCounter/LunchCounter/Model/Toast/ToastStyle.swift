@@ -10,6 +10,7 @@ import SwiftUI
 enum ToastStyle: Equatable {
     case warning
     case success(FoodType)
+    case error
 }
 
 extension ToastStyle {
@@ -19,6 +20,8 @@ extension ToastStyle {
             return .red
         case .success(let foodType):
             return foodType.themeColor
+        case .error:
+            return .red
         }
     }
     
@@ -28,6 +31,8 @@ extension ToastStyle {
             return "exclamationmark.triangle.fill"
         case .success(_):
             return "checkmark.circle.fill"
+        case .error:
+            return "exclamationmark.circle.fill"
         }
     }
 }

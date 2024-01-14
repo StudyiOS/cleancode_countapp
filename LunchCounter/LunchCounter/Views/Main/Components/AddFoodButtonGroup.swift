@@ -14,7 +14,9 @@ struct AddFoodButtonGroup: View {
         ZStack {
             ForEach(FoodType.allCases.indices, id: \.self) { index in
                 AddFoodButton(type: FoodType.allCases[index]) {
-                    viewModel.bindAction(.addFoodButtonDidTapped(FoodType.allCases[index]))
+                    viewModel.bindAction(.addLunchRecord(FoodType.allCases[index]))
+                } longPressAction: {
+                    viewModel.bindAction(.resetLunchRecord(FoodType.allCases[index]))
                 }
                     .offset(
                         x: viewModel.getButtonPositions(index: index)?.xOffSet ?? 0,

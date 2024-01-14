@@ -12,11 +12,9 @@ import SwiftData
 final class LunchRecord {
     var timestamp: Date
     var foodType: FoodType
-    var foodName: String
-    
-    init(foodType: FoodType, foodName: String) {
+
+    init(foodType: FoodType) {
         self.timestamp = Date()
         self.foodType = foodType
-        self.foodName = foodName
     }
 }
