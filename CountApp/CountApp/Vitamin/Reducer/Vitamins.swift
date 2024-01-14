@@ -33,6 +33,8 @@ struct Vitamins {
 
     enum Action {
         case vitamins(IdentifiedActionOf<Vitamin>)
+        case resetAllVitamins
+        case resetVitamins(name: String)
     }
 
     var body: some Reducer<State, Action> {
@@ -51,6 +53,19 @@ struct Vitamins {
                     }
                     return .none
                 case .vitamins:
+                    return .none
+                case .resetAllVitamins:
+                    state.vitamins.forEach {
+                        var vitamin = $0
+                        vitamin.count = 0
+                        state.vitamins.updateOrAppend(vitamin)
+                    }
+                    return .none
+                case .resetVitamins(let name):
+                    if var selectedVitamin = state.vitamins.first(where: { $0.name == name }) {
+                        selectedVitamin.count = 0
+                        state.vitamins.updateOrAppend(selectedVitamin)
+                    }
                     return .none
             }
         }

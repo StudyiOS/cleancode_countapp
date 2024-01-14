@@ -7,12 +7,23 @@
 
 import SwiftUI
 import ComposableArchitecture
+import Combine
 
 struct VitaminCellView: View {
 
     let store: StoreOf<Vitamin>
 
-    @State var isShowCount: Bool = false
+    @State var isShowingCount: Bool = false {
+        didSet {
+            if isShowingCount {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    withAnimation {
+                        isShowingCount = false
+                    }
+                }
+            }
+        }
+    }
 
     var body: some View {
         WithViewStore(self.store, observe: { $0 }) { viewStore in
@@ -23,25 +34,19 @@ struct VitaminCellView: View {
             .vitaminCell(color: viewStore.color)
             .overlay(alignment: .trailing) {
                 vitamineCount(count: viewStore.count.toString)
-                    .opacity(isShowCount ? 1 : 0)
+                    .opacity(isShowingCount ? 1 : 0)
                     .padding(.trailing, 60)
+            }
+            .onChange(of: viewStore.count) {
+                withAnimation {
+                    isShowingCount = true
+                }
             }
             .contextMenu {
                 menuItems(with: viewStore)
             }
             .onTapGesture {
                 viewStore.send(.increaseCount(viewStore.id, 1))
-            }
-            .onChange(of: viewStore.count) { _, _ in
-                withAnimation {
-                    isShowCount = true
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    withAnimation {
-                        isShowCount = false
-                    }
-                }
-                // FIXME: Animation 코드 정리 어떻게 할 수 있을까?
             }
         }
         .padding(.horizontal, 40)
@@ -100,27 +105,4 @@ private extension VitaminCellView {
 
         }
     ))
-}
-
-// MARK: ViewModifier
-struct VitaminCell: ViewModifier {
-    let color: Color
-    func body(content: Content) -> some View {
-        content
-            .frame(maxWidth: .infinity, maxHeight: 100)
-            .contentShape(.contextMenuPreview, // contextmenu radius
-                          RoundedRectangle(cornerRadius: 25))
-            .background(color)
-            .clipShape(RoundedRectangle(cornerRadius: 25))
-            .overlay {
-                RoundedRectangle(cornerRadius: 25)
-                    .stroke(Color.gray.opacity(0.5), lineWidth: 0.5)
-            }
-    }
-}
-
-extension View {
-    func vitaminCell(color: Color) -> some View {
-        modifier(VitaminCell(color: color))
-    }
 }

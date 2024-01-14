@@ -104,6 +104,15 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		B38B777D2B5411280046EAC3 /* Vitamins */ = {
+			isa = PBXGroup;
+			children = (
+				B3FFEA1F2B52E2F500862E55 /* Subviews */,
+				B3FFEA192B52D87B00862E55 /* VitaminsView.swift */,
+			);
+			path = Vitamins;
+			sourceTree = "<group>";
+		};
 		B3FFE9DE2B52D67A00862E55 = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				B3FFEA172B52D70900862E55 /* Vitamin */,
-				B3FFEA182B52D86900862E55 /* Statistics */,
 				B38B77732B53A9A30046EAC3 /* Extension */,
 				B3FFE9EA2B52D67A00862E55 /* CountAppApp.swift */,
 				B3FFE9EE2B52D67C00862E55 /* Assets.xcassets */,
@@ -165,9 +173,9 @@
 		B3FFEA172B52D70900862E55 /* Vitamin */ = {
 			isa = PBXGroup;
 			children = (
-				B3FFEA222B52E32D00862E55 /* Reducers */,
-				B3FFEA1F2B52E2F500862E55 /* Subviews */,
-				B3FFEA192B52D87B00862E55 /* VitaminsView.swift */,
+				B3FFEA222B52E32D00862E55 /* Reducer */,
+				B38B777D2B5411280046EAC3 /* Vitamins */,
+				B3FFEA182B52D86900862E55 /* Statistics */,
 			);
 			path = Vitamin;
 			sourceTree = "<group>";
@@ -189,13 +197,13 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
-		B3FFEA222B52E32D00862E55 /* Reducers */ = {
+		B3FFEA222B52E32D00862E55 /* Reducer */ = {
 			isa = PBXGroup;
 			children = (
 				B3FFEA1B2B52DC2D00862E55 /* Vitamin.swift */,
 				B3FFEA1D2B52DE2900862E55 /* Vitamins.swift */,
 			);
-			path = Reducers;
+			path = Reducer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

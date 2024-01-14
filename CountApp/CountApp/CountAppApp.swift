@@ -24,7 +24,7 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-            VitaminsView(store: store)
+            VitaminsView(store: store) // store 하나로 다수 뷰 사용
             .tabItem {
                 Image(systemName: "pills.fill")
                 Text("비타민")

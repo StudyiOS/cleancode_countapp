@@ -20,7 +20,7 @@ struct StatisticsCellView: View {
                 vitaminName(with: viewStore.name)
                 vitamineCount(count: viewStore.count.toString)
             }
-            .statisticsCell(color: viewStore.color)
+            .vitaminCell(color: viewStore.color, height: 50)
         }
         .padding(.horizontal, 40)
     }
@@ -49,25 +49,4 @@ private extension StatisticsCellView {
 
         }
     ))
-}
-
-// MARK: ViewModifier
-struct StatisticsCell: ViewModifier {
-    let color: Color
-    func body(content: Content) -> some View {
-        content
-            .frame(maxWidth: .infinity, maxHeight: 50)
-            .background(color)
-            .clipShape(RoundedRectangle(cornerRadius: 15))
-            .overlay {
-                RoundedRectangle(cornerRadius: 15)
-                    .stroke(Color.gray.opacity(0.5), lineWidth: 0.5)
-            }
-    }
-}
-
-extension View {
-    func statisticsCell(color: Color) -> some View {
-        modifier(StatisticsCell(color: color))
-    }
 }
