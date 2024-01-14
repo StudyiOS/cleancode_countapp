@@ -21,42 +21,39 @@ final class DataManager {
         self.modelContext = modelContainer.mainContext
     }
 
-    func appendItem(item: LunchRecord, inFailure: () -> Void) {
+    func appendItem(item: LunchRecord, inFailure: (DataSourceError) -> Void) {
         modelContext.insert(item)
         do {
             try modelContext.save()
         } catch {
-            inFailure()
-            fatalError(error.localizedDescription)
+            inFailure(.addDataError(error))
         }
     }
 
-    func fetchItems(inFailure: () -> Void) -> [LunchRecord] {
+    func fetchItems(inFailure: (DataSourceError) -> Void) -> [LunchRecord] {
         do {
             return try modelContext.fetch(FetchDescriptor<LunchRecord>())
         } catch {
-            inFailure()
-            fatalError(error.localizedDescription)
+            inFailure(.fetchDataError(error))
+            return []
         }
     }
-
-    func removeItem(_ type: FoodType, inFailure: () -> Void) {
+    
+    func removeItem(_ type: FoodType, inFailure: (DataSourceError) -> Void) {
         do {
             try modelContext.delete(model: LunchRecord.self, where: #Predicate { lunch in
                 lunch.foodType == type
             })
         } catch {
-            inFailure()
-            print(error.localizedDescription)
+            inFailure(.deleteDataError(error))
         }
     }
     
-    func removeAll(inFailure: () -> Void) {
+    func removeAll(inFailure: (DataSourceError) -> Void) {
         do {
             try modelContext.delete(model: LunchRecord.self)
         } catch {
-            inFailure()
-            print(error.localizedDescription)
+            inFailure(.deleteDataError(error))
         }
     }
 }

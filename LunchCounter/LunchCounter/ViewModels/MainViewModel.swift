@@ -12,13 +12,13 @@ import Combine
 final class MainViewModel: ViewModel {
     var dataManager: DataManager
     
+    private let radius = 120.0
+    private let angleStep = Double.pi * 2.0 / Double(FoodType.allCases.count)
+    
     enum Action {
         case addLunchRecord(FoodType)
         case resetLunchRecord(FoodType?) // nil 인 경우 모든 데이터가 초기화 되도록
     }
-    
-    fileprivate let radius = 120.0
-    fileprivate let angleStep = Double.pi * 2.0 / Double(FoodType.allCases.count)
     
     @Published var toast: Toast?
     
@@ -33,25 +33,24 @@ final class MainViewModel: ViewModel {
         case .addLunchRecord(let foodType):
             dataManager.appendItem(item: LunchRecord(foodType: foodType),
                                    inFailure: {
-                self.toast = Toast(style: .error, message: "\(foodType.rawValue)을 추가하는데 오류가 발생하였습니다.\n잠시 후 다시 시도해주세요.")
+                setErrorToast(error: $0, foodType: foodType)
             })
             
             self.toast = Toast(style: .success(foodType),
                                message: "\(foodType.rawValue) 식사량이 +1 되었습니다.")
-            
-            print(dataManager.fetchItems(inFailure: {
-                print("아이템 가져오기 실패")
-            }).count)
+
         case .resetLunchRecord(let foodType):
             guard let foodType = foodType else {
-                print("전체 초기화")
                 self.toast = Toast(style: .warning, message: "모든 식사 데이터가 삭제 되었습니다.")
+                dataManager.removeAll {
+                    setErrorToast(error: $0)
+                }
                 return
             }
             self.toast = Toast(style: .warning,
                                message: "\(foodType.rawValue) 데이터가 삭제 되었습니다.")
             dataManager.removeItem(foodType, inFailure: {
-                self.toast = Toast(style: .error, message: "\(foodType.rawValue) 데이터를 삭제 하는데 실패였습니다.\n잠시 후 다시 시도해주세요.")
+                setErrorToast(error: $0, foodType: foodType)
             })
         }
     }
@@ -76,5 +75,24 @@ final class MainViewModel: ViewModel {
                                       yOffSet: yOffset))
         }
         return positions[index]
+    }
+    
+    private func setErrorToast(error: DataSourceError, foodType: FoodType? = nil) {
+        var errorToast: Toast
+        
+        switch error {
+        case .fetchDataError(let error):
+            errorToast = Toast(style: .error, message: "데이터를 불러오는데 오류가 발생하였습니다.\n잠시 후 다시 시도해주세요.")
+        case .addDataError(let error):
+            errorToast = Toast(style: .error, message: "데이터를 추가하는데 오류가 발생하였습니다.\n잠시 후 다시 시도해주세요.")
+        case .deleteDataError(let error):
+            guard let foodType = foodType else {
+                errorToast = Toast(style: .warning, message: "모든 식사 데이터를 삭제하는데 오류가 발생하였습니다.\n잠시 후 다시 시도해주세요.")
+                return
+            }
+            errorToast = Toast(style: .error, message: "\(foodType.rawValue)을 삭제하는데 오류가 발생하였습니다.\n잠시 후 다시 시도해주세요.")
+        }
+        
+        self.toast = errorToast
     }
 }

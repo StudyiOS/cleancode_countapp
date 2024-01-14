@@ -18,7 +18,7 @@ struct MainTabView: View {
                                       systemImageName: "fork.knife",
                                       selectedTab: $selectedTab))
             
-            LunchGraphView()
+            LunchGraphView(dataManager: DataManager.shared)
                 .modifier(TabViewItem(index: 1, 
                                       title: "Chart",
                                       systemImageName: "chart.bar.xaxis",

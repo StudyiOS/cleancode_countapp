@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import Charts
 
-enum FoodType: String, CaseIterable, Codable {
+enum FoodType: String, CaseIterable, Codable, Plottable {
     case korean = "한식"
     case western = "양식"
     case japanese = "일식"
@@ -19,11 +20,11 @@ extension FoodType {
     var themeColor: Color {
         switch self {
         case .korean:
-            return .green
+            return .orange
         case .western:
             return .blue
         case .japanese:
-            return .pink
+            return .pink.opacity(0.8)
         case .chinese:
             return .red
         case .asian:

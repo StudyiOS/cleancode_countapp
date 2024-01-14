@@ -27,6 +27,8 @@
 		F1C2EF7F2B53C01500B8C43F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF7E2B53C01500B8C43F /* View+Extension.swift */; };
 		F1C2EF812B53C9B300B8C43F /* LunchGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF802B53C9B300B8C43F /* LunchGraphView.swift */; };
 		F1C2EF842B53CCA100B8C43F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF832B53CCA100B8C43F /* DataManager.swift */; };
+		F1C2EF862B53D70B00B8C43F /* GraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF852B53D70B00B8C43F /* GraphViewModel.swift */; };
+		F1C2EF882B53DE3700B8C43F /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF872B53DE3700B8C43F /* DataSourceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		F1C2EF7E2B53C01500B8C43F /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		F1C2EF802B53C9B300B8C43F /* LunchGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchGraphView.swift; sourceTree = "<group>"; };
 		F1C2EF832B53CCA100B8C43F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F1C2EF852B53D70B00B8C43F /* GraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewModel.swift; sourceTree = "<group>"; };
+		F1C2EF872B53DE3700B8C43F /* DataSourceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C2EF452B52ADD300B8C43F /* LunchCounterApp.swift */,
-				F1C2EF822B53CC8700B8C43F /* Helpers */,
+				F1C2EF822B53CC8700B8C43F /* Service */,
 				F1C2EF552B52AE0000B8C43F /* Model */,
 				F1C2EF632B53ADB100B8C43F /* ViewModels */,
 				F1C2EF5A2B52AE1800B8C43F /* Views */,
@@ -147,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C2EF642B53ADC500B8C43F /* MainViewModel.swift */,
+				F1C2EF852B53D70B00B8C43F /* GraphViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -211,12 +216,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		F1C2EF822B53CC8700B8C43F /* Helpers */ = {
+		F1C2EF822B53CC8700B8C43F /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				F1C2EF832B53CCA100B8C43F /* DataManager.swift */,
+				F1C2EF872B53DE3700B8C43F /* DataSourceError.swift */,
 			);
-			path = Helpers;
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,11 +298,13 @@
 				F1C2EF782B53BC0B00B8C43F /* ToastView.swift in Sources */,
 				F1C2EF842B53CCA100B8C43F /* DataManager.swift in Sources */,
 				F1C2EF6A2B53B35F00B8C43F /* MainTabView.swift in Sources */,
+				F1C2EF862B53D70B00B8C43F /* GraphViewModel.swift in Sources */,
 				F1C2EF682B53AE3A00B8C43F /* ViewModel.swift in Sources */,
 				F1C2EF592B52AE0000B8C43F /* FoodType.swift in Sources */,
 				F1C2EF712B53B8D500B8C43F /* Toast.swift in Sources */,
 				F1C2EF5C2B52AE3000B8C43F /* MainView.swift in Sources */,
 				F1C2EF622B53ADA100B8C43F /* Postition.swift in Sources */,
+				F1C2EF882B53DE3700B8C43F /* DataSourceError.swift in Sources */,
 				F1C2EF7B2B53BE7D00B8C43F /* ToastModifier.swift in Sources */,
 				F1C2EF582B52AE0000B8C43F /* LunchRecord.swift in Sources */,
 				F1C2EF602B52AE9500B8C43F /* AddFoodButton.swift in Sources */,
