@@ -1,14 +1,14 @@
 //
-//  VitaminsView.swift
+//  StatisticsView.swift
 //  CountApp
 //
-//  Created by Leo on 1/13/24.
+//  Created by Leo on 1/14/24.
 //
 
 import SwiftUI
 import ComposableArchitecture
 
-struct VitaminsView: View {
+struct StatisticsView: View {
 
     let store: StoreOf<Vitamins>
 
@@ -17,7 +17,7 @@ struct VitaminsView: View {
             VStack(spacing: 20) {
                 ForEachStore(store.scope(state: \.vitamins,
                                          action: \.vitamins)) { store in
-                    VitaminCellView(store: store)
+                    StatisticsCellView(store: store)
                 }
             }
         }
@@ -25,7 +25,7 @@ struct VitaminsView: View {
 }
 
 #Preview {
-    VitaminsView(
+    StatisticsView(
         store: Store(initialState: Vitamins.State()){
 
         })
