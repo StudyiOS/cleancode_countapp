@@ -9,14 +9,15 @@ import SwiftUI
 
 struct AddFoodButton: View {
     let type: FoodType
+    var action: (() -> Void)
     
     var body: some View {
         Button(action: {
-            print("\(type) +1")
+            action()
         }, label: {
             Circle()
                 .frame(width: 60, height: 60)
-                .foregroundStyle(getCircleColor())
+                .foregroundStyle(type.themeColor)
                 .overlay {
                     Text(type.rawValue)
                         .fontWeight(.bold)
@@ -24,23 +25,10 @@ struct AddFoodButton: View {
                 }
         })
     }
-    
-    private func getCircleColor() -> Color {
-        switch type {
-        case .korean:
-            return .green
-        case .western:
-            return .blue
-        case .japanese:
-            return .pink
-        case .chinese:
-            return .red
-        case .asian:
-            return .yellow
-        }
-    }
 }
 
 #Preview {
-    AddFoodButton(type: .asian)
+    AddFoodButton(type: .asian) {
+        print("Did tapped")
+    }
 }

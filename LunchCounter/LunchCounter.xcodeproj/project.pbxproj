@@ -22,6 +22,11 @@
 		F1C2EF6A2B53B35F00B8C43F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF692B53B35F00B8C43F /* MainTabView.swift */; };
 		F1C2EF6D2B53B3C900B8C43F /* TabViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF6C2B53B3C900B8C43F /* TabViewItem.swift */; };
 		F1C2EF6F2B53B4FA00B8C43F /* AddFoodButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF6E2B53B4FA00B8C43F /* AddFoodButtonGroup.swift */; };
+		F1C2EF712B53B8D500B8C43F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF702B53B8D500B8C43F /* Toast.swift */; };
+		F1C2EF742B53B9CC00B8C43F /* ToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF732B53B9CC00B8C43F /* ToastStyle.swift */; };
+		F1C2EF782B53BC0B00B8C43F /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF772B53BC0B00B8C43F /* ToastView.swift */; };
+		F1C2EF7B2B53BE7D00B8C43F /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF7A2B53BE7D00B8C43F /* ToastModifier.swift */; };
+		F1C2EF7F2B53C01500B8C43F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2EF7E2B53C01500B8C43F /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,11 @@
 		F1C2EF692B53B35F00B8C43F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		F1C2EF6C2B53B3C900B8C43F /* TabViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewItem.swift; sourceTree = "<group>"; };
 		F1C2EF6E2B53B4FA00B8C43F /* AddFoodButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodButtonGroup.swift; sourceTree = "<group>"; };
+		F1C2EF702B53B8D500B8C43F /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		F1C2EF732B53B9CC00B8C43F /* ToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastStyle.swift; sourceTree = "<group>"; };
+		F1C2EF772B53BC0B00B8C43F /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		F1C2EF7A2B53BE7D00B8C43F /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
+		F1C2EF7E2B53C01500B8C43F /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +87,7 @@
 				F1C2EF552B52AE0000B8C43F /* Model */,
 				F1C2EF632B53ADB100B8C43F /* ViewModels */,
 				F1C2EF5A2B52AE1800B8C43F /* Views */,
-				F1C2EF662B53AE0900B8C43F /* Protocols */,
+				F1C2EF7C2B53BFF500B8C43F /* Uitility */,
 				F1C2EF472B52ADD300B8C43F /* ContentView.swift */,
 				F1C2EF492B52ADD300B8C43F /* Item.swift */,
 				F1C2EF4B2B52ADD400B8C43F /* Assets.xcassets */,
@@ -100,6 +110,7 @@
 				F1C2EF562B52AE0000B8C43F /* LunchRecord.swift */,
 				F1C2EF572B52AE0000B8C43F /* FoodType.swift */,
 				F1C2EF612B53ADA100B8C43F /* Postition.swift */,
+				F1C2EF722B53B9BD00B8C43F /* Toast */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +120,7 @@
 			children = (
 				F1C2EF6B2B53B38000B8C43F /* TabView */,
 				F1C2EF5D2B52AE6700B8C43F /* Main */,
+				F1C2EF752B53BBD700B8C43F /* Graph */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 			children = (
 				F1C2EF5F2B52AE9500B8C43F /* AddFoodButton.swift */,
 				F1C2EF6E2B53B4FA00B8C43F /* AddFoodButtonGroup.swift */,
+				F1C2EF792B53BE6400B8C43F /* ToastView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -154,6 +167,48 @@
 				F1C2EF6C2B53B3C900B8C43F /* TabViewItem.swift */,
 			);
 			path = TabView;
+			sourceTree = "<group>";
+		};
+		F1C2EF722B53B9BD00B8C43F /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				F1C2EF702B53B8D500B8C43F /* Toast.swift */,
+				F1C2EF732B53B9CC00B8C43F /* ToastStyle.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		F1C2EF752B53BBD700B8C43F /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		F1C2EF792B53BE6400B8C43F /* ToastView */ = {
+			isa = PBXGroup;
+			children = (
+				F1C2EF772B53BC0B00B8C43F /* ToastView.swift */,
+				F1C2EF7A2B53BE7D00B8C43F /* ToastModifier.swift */,
+			);
+			path = ToastView;
+			sourceTree = "<group>";
+		};
+		F1C2EF7C2B53BFF500B8C43F /* Uitility */ = {
+			isa = PBXGroup;
+			children = (
+				F1C2EF7D2B53C00300B8C43F /* Extensions */,
+				F1C2EF662B53AE0900B8C43F /* Protocols */,
+			);
+			path = Uitility;
+			sourceTree = "<group>";
+		};
+		F1C2EF7D2B53C00300B8C43F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1C2EF7E2B53C01500B8C43F /* View+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,18 +281,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C2EF782B53BC0B00B8C43F /* ToastView.swift in Sources */,
 				F1C2EF6A2B53B35F00B8C43F /* MainTabView.swift in Sources */,
 				F1C2EF682B53AE3A00B8C43F /* ViewModel.swift in Sources */,
 				F1C2EF592B52AE0000B8C43F /* FoodType.swift in Sources */,
+				F1C2EF712B53B8D500B8C43F /* Toast.swift in Sources */,
 				F1C2EF5C2B52AE3000B8C43F /* MainView.swift in Sources */,
 				F1C2EF482B52ADD300B8C43F /* ContentView.swift in Sources */,
 				F1C2EF622B53ADA100B8C43F /* Postition.swift in Sources */,
+				F1C2EF7B2B53BE7D00B8C43F /* ToastModifier.swift in Sources */,
 				F1C2EF582B52AE0000B8C43F /* LunchRecord.swift in Sources */,
 				F1C2EF4A2B52ADD300B8C43F /* Item.swift in Sources */,
 				F1C2EF602B52AE9500B8C43F /* AddFoodButton.swift in Sources */,
+				F1C2EF742B53B9CC00B8C43F /* ToastStyle.swift in Sources */,
 				F1C2EF6D2B53B3C900B8C43F /* TabViewItem.swift in Sources */,
 				F1C2EF462B52ADD300B8C43F /* LunchCounterApp.swift in Sources */,
 				F1C2EF652B53ADC500B8C43F /* MainViewModel.swift in Sources */,
+				F1C2EF7F2B53C01500B8C43F /* View+Extension.swift in Sources */,
 				F1C2EF6F2B53B4FA00B8C43F /* AddFoodButtonGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

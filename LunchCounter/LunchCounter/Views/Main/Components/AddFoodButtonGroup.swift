@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct AddFoodButtonGroup: View {
-    @ObservedObject var viewModel: MainViewModel
-    
+    @StateObject var viewModel: MainViewModel
+
     var body: some View {
         ZStack {
             ForEach(FoodType.allCases.indices, id: \.self) { index in
-                AddFoodButton(type: FoodType.allCases[index])
+                AddFoodButton(type: FoodType.allCases[index]) {
+                    viewModel.bindAction(.addFoodButtonDidTapped(FoodType.allCases[index]))
+                }
                     .offset(
                         x: viewModel.getButtonPositions(index: index)?.xOffSet ?? 0,
                         y: viewModel.getButtonPositions(index: index)?.yOffSet ?? 0

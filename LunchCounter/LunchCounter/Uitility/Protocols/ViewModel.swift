@@ -10,9 +10,6 @@ import Combine
 
 protocol ViewModel: ObservableObject {
     associatedtype Action
-    associatedtype State
-    
-    var state: State { get }
     
     func bindAction(_ action: Action)
 }
