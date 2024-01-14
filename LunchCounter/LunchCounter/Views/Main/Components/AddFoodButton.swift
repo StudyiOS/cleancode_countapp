@@ -15,7 +15,7 @@ struct AddFoodButton: View {
             print("\(type) +1")
         }, label: {
             Circle()
-                .frame(width: 50, height: 50)
+                .frame(width: 60, height: 60)
                 .foregroundStyle(getCircleColor())
                 .overlay {
                     Text(type.rawValue)

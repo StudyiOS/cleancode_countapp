@@ -6,10 +6,21 @@
 //
 
 import SwiftUI
+import Combine
 
 struct MainView: View {
+    @ObservedObject var viewModel = MainViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("오늘 점심 메뉴를 골라주세요.")
+                .bold()
+                .font(.headline)
+                .padding(.top)
+            Spacer()
+            AddFoodButtonGroup(viewModel: viewModel)
+            Spacer()
+        }
     }
 }
 
