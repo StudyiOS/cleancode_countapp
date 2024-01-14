@@ -12,27 +12,57 @@ struct VitaminCellView: View {
 
     let store: StoreOf<Vitamin>
 
+    @State var isShowCount: Bool = false
+
     var body: some View {
         WithViewStore(self.store, observe: { $0 }) { viewStore in
             HStack {
-                Image(systemName: "pills.fill")
-                Text(viewStore.name)
-                    .font(.subheadline)
+                pillImage
+                vitaminName(with: viewStore.name)
             }
             .vitaminCell(color: viewStore.color)
+            .overlay(alignment: .trailing) {
+                vitamineCount(count: viewStore.count.toString)
+                    .opacity(isShowCount ? 1 : 0)
+                    .padding(.trailing, 60)
+            }
             .contextMenu {
                 menuItems(with: viewStore)
             }
             .onTapGesture {
                 viewStore.send(.increaseCount(viewStore.id, 1))
             }
-            .padding(.horizontal, 40)
+            .onChange(of: viewStore.count) { _, _ in
+                withAnimation {
+                    isShowCount = true
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    withAnimation {
+                        isShowCount = false
+                    }
+                }
+                // FIXME: Animation 코드 정리 어떻게 할 수 있을까?
+            }
         }
+        .padding(.horizontal, 40)
     }
 }
 
 private extension VitaminCellView {
-    @ViewBuilder
+
+    var pillImage: Image {
+        Image(systemName: "pills.fill")
+    }
+
+    func vitaminName(with name: String) -> some View {
+        Text(name)
+            .font(.subheadline)
+    }
+
+    func vitamineCount(count: String) -> some View {
+        Text("+ " + count)
+    }
+
     func menuItems(with viewStore: ViewStore<Vitamin.State, Vitamin.Action>) -> some View {
         Group {
             Button(

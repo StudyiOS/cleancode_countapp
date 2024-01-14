@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B38B77752B53A9AD0046EAC3 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38B77742B53A9AD0046EAC3 /* View+Extension.swift */; };
+		B38B77772B53C1800046EAC3 /* Numeric+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38B77762B53C1800046EAC3 /* Numeric+Extension.swift */; };
 		B3FFE9EB2B52D67A00862E55 /* CountAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFE9EA2B52D67A00862E55 /* CountAppApp.swift */; };
 		B3FFE9EF2B52D67C00862E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FFE9EE2B52D67C00862E55 /* Assets.xcassets */; };
 		B3FFE9F22B52D67C00862E55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FFE9F12B52D67C00862E55 /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		B38B77742B53A9AD0046EAC3 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		B38B77762B53C1800046EAC3 /* Numeric+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+Extension.swift"; sourceTree = "<group>"; };
 		B3FFE9E72B52D67A00862E55 /* CountApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FFE9EA2B52D67A00862E55 /* CountAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountAppApp.swift; sourceTree = "<group>"; };
 		B3FFE9EE2B52D67C00862E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				B38B77742B53A9AD0046EAC3 /* View+Extension.swift */,
+				B38B77762B53C1800046EAC3 /* Numeric+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -150,7 +153,7 @@
 		B3FFEA172B52D70900862E55 /* Vitamin */ = {
 			isa = PBXGroup;
 			children = (
-				B3FFEA222B52E32D00862E55 /* Models */,
+				B3FFEA222B52E32D00862E55 /* Reducers */,
 				B3FFEA1F2B52E2F500862E55 /* Subviews */,
 				B3FFEA192B52D87B00862E55 /* VitaminsView.swift */,
 			);
@@ -172,13 +175,13 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
-		B3FFEA222B52E32D00862E55 /* Models */ = {
+		B3FFEA222B52E32D00862E55 /* Reducers */ = {
 			isa = PBXGroup;
 			children = (
 				B3FFEA1B2B52DC2D00862E55 /* Vitamin.swift */,
 				B3FFEA1D2B52DE2900862E55 /* Vitamins.swift */,
 			);
-			path = Models;
+			path = Reducers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +322,7 @@
 			files = (
 				B3FFEA1C2B52DC2D00862E55 /* Vitamin.swift in Sources */,
 				B3FFEA212B52E30A00862E55 /* VitaminCellView.swift in Sources */,
+				B38B77772B53C1800046EAC3 /* Numeric+Extension.swift in Sources */,
 				B3FFEA1E2B52DE2900862E55 /* Vitamins.swift in Sources */,
 				B3FFEA1A2B52D87B00862E55 /* VitaminsView.swift in Sources */,
 				B38B77752B53A9AD0046EAC3 /* View+Extension.swift in Sources */,

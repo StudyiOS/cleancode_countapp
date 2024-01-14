@@ -15,7 +15,7 @@ struct Vitamin {
         let id: UUID
         let name: String
         let color: Color
-        var count: Int = 0
+        @BindingState var count: Int = 0
     }
 
     enum Action: BindableAction, Sendable {
