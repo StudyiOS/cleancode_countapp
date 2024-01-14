@@ -11,8 +11,8 @@ import Charts
 struct LunchGraphView: View {
     @StateObject private var viewModel: GraphViewModel
     
-    init(dataManager: DataManager) {
-        self._viewModel = StateObject(wrappedValue: GraphViewModel(dataManager: dataManager))
+    init(dataManager: any DataManager) {
+        self._viewModel = StateObject(wrappedValue: GraphViewModel(dataManager: dataManager as! SwiftDataManager))
     }
     
     var body: some View {
@@ -56,5 +56,5 @@ struct LunchGraphView: View {
 }
 
 #Preview {
-    LunchGraphView(dataManager: DataManager.shared)
+    LunchGraphView(dataManager: SwiftDataManager.shared)
 }

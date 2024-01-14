@@ -10,7 +10,7 @@ import SwiftData
 import Combine
 
 final class MainViewModel: ViewModel {
-    var dataManager: DataManager
+    var dataManager: SwiftDataManager
     
     private let radius = 120.0
     private let angleStep = Double.pi * 2.0 / Double(FoodType.allCases.count)
@@ -22,7 +22,7 @@ final class MainViewModel: ViewModel {
     
     @Published var toast: Toast?
     
-    init(dataManager: DataManager) {
+    init(dataManager: SwiftDataManager) {
         self.dataManager = dataManager
     }
     
@@ -31,7 +31,7 @@ final class MainViewModel: ViewModel {
     func bindAction(_ action: Action) {
         switch action {
         case .addLunchRecord(let foodType):
-            dataManager.appendItem(item: LunchRecord(foodType: foodType),
+            dataManager.appendData(item: LunchRecord(foodType: foodType),
                                    inFailure: {
                 setErrorToast(error: $0, foodType: foodType)
             })
@@ -49,7 +49,7 @@ final class MainViewModel: ViewModel {
             }
             self.toast = Toast(style: .warning,
                                message: "\(foodType.rawValue) 데이터가 삭제 되었습니다.")
-            dataManager.removeItem(foodType, inFailure: {
+            dataManager.removeData(foodType, inFailure: {
                 setErrorToast(error: $0, foodType: foodType)
             })
         }
@@ -77,7 +77,7 @@ final class MainViewModel: ViewModel {
         return positions[index]
     }
     
-    private func setErrorToast(error: DataSourceError, foodType: FoodType? = nil) {
+    private func setErrorToast(error: SwiftDataError, foodType: FoodType? = nil) {
         var errorToast: Toast
         
         switch error {

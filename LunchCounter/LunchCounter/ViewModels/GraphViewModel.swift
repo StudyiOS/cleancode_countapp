@@ -11,7 +11,7 @@ import Combine
 
 class GraphViewModel: ViewModel {
     
-    var dataManager: DataManager
+    var dataManager: SwiftDataManager
     
     enum Action {
         case getData
@@ -19,9 +19,9 @@ class GraphViewModel: ViewModel {
     
     @Published var records: [LunchRecord]
     
-    init(dataManager: DataManager) {
+    init(dataManager: SwiftDataManager) {
         self.dataManager = dataManager
-        self._records = Published(wrappedValue: dataManager.fetchItems {
+        self._records = Published(wrappedValue: dataManager.fetchData {
             print($0.localizedDescription)
         })
     }
@@ -31,7 +31,7 @@ class GraphViewModel: ViewModel {
     func bindAction(_ action: Action) {
         switch action {
         case .getData:
-            self.records = dataManager.fetchItems {
+            self.records = dataManager.fetchData {
                 print($0.localizedDescription)
             }
         }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DataSourceError: Error {
+enum SwiftDataError: Error {
     case fetchDataError(Error)
     case addDataError(Error)
     case deleteDataError(Error)

@@ -8,12 +8,15 @@
 import SwiftUI
 import SwiftData
 
-final class DataManager {
+final class SwiftDataManager: DataManager {
+    typealias Item = LunchRecord
+    typealias DataError = SwiftDataError
+    
     private let modelContainer: ModelContainer
     private let modelContext: ModelContext
 
     @MainActor
-    static let shared = DataManager()
+    static let shared = SwiftDataManager()
 
     @MainActor
     private init() {
@@ -21,7 +24,7 @@ final class DataManager {
         self.modelContext = modelContainer.mainContext
     }
 
-    func appendItem(item: LunchRecord, inFailure: (DataSourceError) -> Void) {
+    func appendData(item: LunchRecord, inFailure: (SwiftDataError) -> Void) {
         modelContext.insert(item)
         do {
             try modelContext.save()
@@ -30,7 +33,7 @@ final class DataManager {
         }
     }
 
-    func fetchItems(inFailure: (DataSourceError) -> Void) -> [LunchRecord] {
+    func fetchData(inFailure: (SwiftDataError) -> Void) -> [LunchRecord] {
         do {
             return try modelContext.fetch(FetchDescriptor<LunchRecord>())
         } catch {
@@ -39,7 +42,7 @@ final class DataManager {
         }
     }
     
-    func removeItem(_ type: FoodType, inFailure: (DataSourceError) -> Void) {
+    func removeData(_ type: FoodType, inFailure: (SwiftDataError) -> Void) {
         do {
             try modelContext.delete(model: LunchRecord.self, where: #Predicate { lunch in
                 lunch.foodType == type
@@ -49,7 +52,7 @@ final class DataManager {
         }
     }
     
-    func removeAll(inFailure: (DataSourceError) -> Void) {
+    func removeAll(inFailure: (SwiftDataError) -> Void) {
         do {
             try modelContext.delete(model: LunchRecord.self)
         } catch {

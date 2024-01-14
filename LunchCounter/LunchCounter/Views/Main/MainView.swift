@@ -15,8 +15,8 @@ struct MainView: View {
     
     @StateObject private var viewModel: MainViewModel
     
-    init(dataManager: DataManager) {
-        self._viewModel = StateObject(wrappedValue: MainViewModel(dataManager: dataManager))
+    init(dataManager: any DataManager) {
+        self._viewModel = StateObject(wrappedValue: MainViewModel(dataManager: dataManager as! SwiftDataManager))
     }
     
     var body: some View {
@@ -37,5 +37,5 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView(dataManager: DataManager.shared)
+    MainView(dataManager: SwiftDataManager.shared)
 }
