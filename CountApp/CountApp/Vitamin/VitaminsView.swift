@@ -1,5 +1,5 @@
 //
-//  VitaminView.swift
+//  VitaminsView.swift
 //  CountApp
 //
 //  Created by Leo on 1/13/24.
@@ -9,7 +9,7 @@ import SwiftUI
 import ComposableArchitecture
 
 
-struct VitaminView: View {
+struct VitaminsView: View {
 
     let store: StoreOf<Vitamins>
 
@@ -25,7 +25,9 @@ struct VitaminView: View {
     }
 }
 
-//#Preview {
-//    VitaminView(
-//        store: Store(initialState: Vitamin.State(), reducer: <#T##() -> Reducer#>))
-//}
+#Preview {
+    VitaminsView(
+        store: Store(initialState: Vitamins.State()){
+
+        })
+}

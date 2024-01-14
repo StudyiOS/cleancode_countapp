@@ -15,7 +15,7 @@
 		B3FFEA062B52D67C00862E55 /* CountAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFEA052B52D67C00862E55 /* CountAppUITests.swift */; };
 		B3FFEA082B52D67C00862E55 /* CountAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFEA072B52D67C00862E55 /* CountAppUITestsLaunchTests.swift */; };
 		B3FFEA162B52D6B900862E55 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B3FFEA152B52D6B900862E55 /* ComposableArchitecture */; };
-		B3FFEA1A2B52D87B00862E55 /* VitaminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFEA192B52D87B00862E55 /* VitaminView.swift */; };
+		B3FFEA1A2B52D87B00862E55 /* VitaminsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFEA192B52D87B00862E55 /* VitaminsView.swift */; };
 		B3FFEA1C2B52DC2D00862E55 /* Vitamin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFEA1B2B52DC2D00862E55 /* Vitamin.swift */; };
 		B3FFEA1E2B52DE2900862E55 /* Vitamins.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFEA1D2B52DE2900862E55 /* Vitamins.swift */; };
 		B3FFEA212B52E30A00862E55 /* VitaminCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFEA202B52E30A00862E55 /* VitaminCellView.swift */; };
@@ -49,7 +49,7 @@
 		B3FFEA012B52D67C00862E55 /* CountAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FFEA052B52D67C00862E55 /* CountAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountAppUITests.swift; sourceTree = "<group>"; };
 		B3FFEA072B52D67C00862E55 /* CountAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B3FFEA192B52D87B00862E55 /* VitaminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminView.swift; sourceTree = "<group>"; };
+		B3FFEA192B52D87B00862E55 /* VitaminsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminsView.swift; sourceTree = "<group>"; };
 		B3FFEA1B2B52DC2D00862E55 /* Vitamin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vitamin.swift; sourceTree = "<group>"; };
 		B3FFEA1D2B52DE2900862E55 /* Vitamins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vitamins.swift; sourceTree = "<group>"; };
 		B3FFEA202B52E30A00862E55 /* VitaminCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminCellView.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 			children = (
 				B3FFEA222B52E32D00862E55 /* Models */,
 				B3FFEA1F2B52E2F500862E55 /* Subviews */,
-				B3FFEA192B52D87B00862E55 /* VitaminView.swift */,
+				B3FFEA192B52D87B00862E55 /* VitaminsView.swift */,
 			);
 			path = Vitamin;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 				B3FFEA1C2B52DC2D00862E55 /* Vitamin.swift in Sources */,
 				B3FFEA212B52E30A00862E55 /* VitaminCellView.swift in Sources */,
 				B3FFEA1E2B52DE2900862E55 /* Vitamins.swift in Sources */,
-				B3FFEA1A2B52D87B00862E55 /* VitaminView.swift in Sources */,
+				B3FFEA1A2B52D87B00862E55 /* VitaminsView.swift in Sources */,
 				B38B77752B53A9AD0046EAC3 /* View+Extension.swift in Sources */,
 				B3FFE9EB2B52D67A00862E55 /* CountAppApp.swift in Sources */,
 			);
