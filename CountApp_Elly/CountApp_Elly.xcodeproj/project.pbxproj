@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		453089072B52725500E199B9 /* CountApp_EllyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089062B52725500E199B9 /* CountApp_EllyApp.swift */; };
+		453089092B52725500E199B9 /* CounterAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089082B52725500E199B9 /* CounterAppView.swift */; };
+		4530890B2B52725700E199B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4530890A2B52725700E199B9 /* Assets.xcassets */; };
+		4530890E2B52725700E199B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4530890D2B52725700E199B9 /* Preview Assets.xcassets */; };
+		453089182B52725700E199B9 /* CountApp_EllyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089172B52725700E199B9 /* CountApp_EllyTests.swift */; };
+		453089222B52725700E199B9 /* CountApp_EllyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089212B52725700E199B9 /* CountApp_EllyUITests.swift */; };
+		453089242B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089232B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift */; };
+		453089322B5275CD00E199B9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 453089312B5275CD00E199B9 /* ComposableArchitecture */; };
+		453089362B5278A100E199B9 /* CoffeeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089352B5278A100E199B9 /* CoffeeMenuView.swift */; };
+		453089382B5278B000E199B9 /* CounterAppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089372B5278B000E199B9 /* CounterAppStore.swift */; };
+		4530893C2B5278C900E199B9 /* TapCountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530893B2B5278C900E199B9 /* TapCountingView.swift */; };
+		453089402B527AAF00E199B9 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530893F2B527AAF00E199B9 /* Menu.swift */; };
+		453089432B527B2F00E199B9 /* Americano.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089422B527B2F00E199B9 /* Americano.swift */; };
+		453089452B527F8900E199B9 /* Mocha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089442B527F8900E199B9 /* Mocha.swift */; };
+		453089472B527FBD00E199B9 /* Hazelnut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089462B527FBD00E199B9 /* Hazelnut.swift */; };
+		453089492B527FD500E199B9 /* Latte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089482B527FD500E199B9 /* Latte.swift */; };
+		4530894B2B527FF700E199B9 /* CaramelMacchiato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530894A2B527FF700E199B9 /* CaramelMacchiato.swift */; };
+		4530894D2B52874E00E199B9 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530894C2B52874E00E199B9 /* MenuItemView.swift */; };
+		453089512B52974700E199B9 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453089502B52974700E199B9 /* Color+.swift */; };
+		4539469E2B52B37D007FE780 /* CountingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4539469D2B52B37D007FE780 /* CountingItemView.swift */; };
+		453946A12B52BE19007FE780 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 453946A02B52BE19007FE780 /* Localizable.xcstrings */; };
+		453946A32B52CB20007FE780 /* CoffeeMenuContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453946A22B52CB20007FE780 /* CoffeeMenuContextView.swift */; };
+		453946A52B52CBA3007FE780 /* TapCountingContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453946A42B52CBA3007FE780 /* TapCountingContextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		453089142B52725700E199B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 453088FB2B52725500E199B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 453089022B52725500E199B9;
+			remoteInfo = CountApp_Elly;
+		};
+		4530891E2B52725700E199B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 453088FB2B52725500E199B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 453089022B52725500E199B9;
+			remoteInfo = CountApp_Elly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		453089032B52725500E199B9 /* CountApp_Elly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountApp_Elly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		453089062B52725500E199B9 /* CountApp_EllyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountApp_EllyApp.swift; sourceTree = "<group>"; };
+		453089082B52725500E199B9 /* CounterAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAppView.swift; sourceTree = "<group>"; };
+		4530890A2B52725700E199B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4530890D2B52725700E199B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		453089132B52725700E199B9 /* CountApp_EllyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountApp_EllyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		453089172B52725700E199B9 /* CountApp_EllyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountApp_EllyTests.swift; sourceTree = "<group>"; };
+		4530891D2B52725700E199B9 /* CountApp_EllyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountApp_EllyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		453089212B52725700E199B9 /* CountApp_EllyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountApp_EllyUITests.swift; sourceTree = "<group>"; };
+		453089232B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountApp_EllyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		453089352B5278A100E199B9 /* CoffeeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenuView.swift; sourceTree = "<group>"; };
+		453089372B5278B000E199B9 /* CounterAppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAppStore.swift; sourceTree = "<group>"; };
+		4530893B2B5278C900E199B9 /* TapCountingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCountingView.swift; sourceTree = "<group>"; };
+		4530893F2B527AAF00E199B9 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		453089422B527B2F00E199B9 /* Americano.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Americano.swift; sourceTree = "<group>"; };
+		453089442B527F8900E199B9 /* Mocha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocha.swift; sourceTree = "<group>"; };
+		453089462B527FBD00E199B9 /* Hazelnut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hazelnut.swift; sourceTree = "<group>"; };
+		453089482B527FD500E199B9 /* Latte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latte.swift; sourceTree = "<group>"; };
+		4530894A2B527FF700E199B9 /* CaramelMacchiato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaramelMacchiato.swift; sourceTree = "<group>"; };
+		4530894C2B52874E00E199B9 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		453089502B52974700E199B9 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		4539469D2B52B37D007FE780 /* CountingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingItemView.swift; sourceTree = "<group>"; };
+		453946A02B52BE19007FE780 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		453946A22B52CB20007FE780 /* CoffeeMenuContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenuContextView.swift; sourceTree = "<group>"; };
+		453946A42B52CBA3007FE780 /* TapCountingContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCountingContextView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		453089002B52725500E199B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453089322B5275CD00E199B9 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453089102B52725700E199B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4530891A2B52725700E199B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		453088FA2B52725500E199B9 = {
+			isa = PBXGroup;
+			children = (
+				453089052B52725500E199B9 /* CountApp_Elly */,
+				453089162B52725700E199B9 /* CountApp_EllyTests */,
+				453089202B52725700E199B9 /* CountApp_EllyUITests */,
+				453089042B52725500E199B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		453089042B52725500E199B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				453089032B52725500E199B9 /* CountApp_Elly.app */,
+				453089132B52725700E199B9 /* CountApp_EllyTests.xctest */,
+				4530891D2B52725700E199B9 /* CountApp_EllyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		453089052B52725500E199B9 /* CountApp_Elly */ = {
+			isa = PBXGroup;
+			children = (
+				453089062B52725500E199B9 /* CountApp_EllyApp.swift */,
+				4530893D2B527A7000E199B9 /* Model */,
+				4530893E2B527A9400E199B9 /* Domain */,
+				4530894F2B52972600E199B9 /* Extension */,
+				4530890A2B52725700E199B9 /* Assets.xcassets */,
+				4530890C2B52725700E199B9 /* Preview Content */,
+				453946A02B52BE19007FE780 /* Localizable.xcstrings */,
+			);
+			path = CountApp_Elly;
+			sourceTree = "<group>";
+		};
+		4530890C2B52725700E199B9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4530890D2B52725700E199B9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		453089162B52725700E199B9 /* CountApp_EllyTests */ = {
+			isa = PBXGroup;
+			children = (
+				453089172B52725700E199B9 /* CountApp_EllyTests.swift */,
+			);
+			path = CountApp_EllyTests;
+			sourceTree = "<group>";
+		};
+		453089202B52725700E199B9 /* CountApp_EllyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				453089212B52725700E199B9 /* CountApp_EllyUITests.swift */,
+				453089232B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift */,
+			);
+			path = CountApp_EllyUITests;
+			sourceTree = "<group>";
+		};
+		453089332B52785300E199B9 /* CoffeeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				453089352B5278A100E199B9 /* CoffeeMenuView.swift */,
+				4530894E2B52875200E199B9 /* Subviews */,
+			);
+			path = CoffeeMenu;
+			sourceTree = "<group>";
+		};
+		453089342B52786000E199B9 /* TapCounting */ = {
+			isa = PBXGroup;
+			children = (
+				4530893B2B5278C900E199B9 /* TapCountingView.swift */,
+				453946A62B557C4E007FE780 /* Subviews */,
+			);
+			path = TapCounting;
+			sourceTree = "<group>";
+		};
+		4530893D2B527A7000E199B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				453089412B527B1900E199B9 /* CoffeeMenu */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4530893E2B527A9400E199B9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4539469F2B52BA32007FE780 /* Home */,
+				453089332B52785300E199B9 /* CoffeeMenu */,
+				453089342B52786000E199B9 /* TapCounting */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		453089412B527B1900E199B9 /* CoffeeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4530893F2B527AAF00E199B9 /* Menu.swift */,
+				453089422B527B2F00E199B9 /* Americano.swift */,
+				453089482B527FD500E199B9 /* Latte.swift */,
+				4530894A2B527FF700E199B9 /* CaramelMacchiato.swift */,
+				453089442B527F8900E199B9 /* Mocha.swift */,
+				453089462B527FBD00E199B9 /* Hazelnut.swift */,
+			);
+			path = CoffeeMenu;
+			sourceTree = "<group>";
+		};
+		4530894E2B52875200E199B9 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4530894C2B52874E00E199B9 /* MenuItemView.swift */,
+				453946A22B52CB20007FE780 /* CoffeeMenuContextView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		4530894F2B52972600E199B9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				453089502B52974700E199B9 /* Color+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4539469F2B52BA32007FE780 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				453089082B52725500E199B9 /* CounterAppView.swift */,
+				453089372B5278B000E199B9 /* CounterAppStore.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		453946A62B557C4E007FE780 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4539469D2B52B37D007FE780 /* CountingItemView.swift */,
+				453946A42B52CBA3007FE780 /* TapCountingContextView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		453089022B52725500E199B9 /* CountApp_Elly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 453089272B52725700E199B9 /* Build configuration list for PBXNativeTarget "CountApp_Elly" */;
+			buildPhases = (
+				453088FF2B52725500E199B9 /* Sources */,
+				453089002B52725500E199B9 /* Frameworks */,
+				453089012B52725500E199B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CountApp_Elly;
+			packageProductDependencies = (
+				453089312B5275CD00E199B9 /* ComposableArchitecture */,
+			);
+			productName = CountApp_Elly;
+			productReference = 453089032B52725500E199B9 /* CountApp_Elly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		453089122B52725700E199B9 /* CountApp_EllyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4530892A2B52725700E199B9 /* Build configuration list for PBXNativeTarget "CountApp_EllyTests" */;
+			buildPhases = (
+				4530890F2B52725700E199B9 /* Sources */,
+				453089102B52725700E199B9 /* Frameworks */,
+				453089112B52725700E199B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				453089152B52725700E199B9 /* PBXTargetDependency */,
+			);
+			name = CountApp_EllyTests;
+			productName = CountApp_EllyTests;
+			productReference = 453089132B52725700E199B9 /* CountApp_EllyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4530891C2B52725700E199B9 /* CountApp_EllyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4530892D2B52725700E199B9 /* Build configuration list for PBXNativeTarget "CountApp_EllyUITests" */;
+			buildPhases = (
+				453089192B52725700E199B9 /* Sources */,
+				4530891A2B52725700E199B9 /* Frameworks */,
+				4530891B2B52725700E199B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4530891F2B52725700E199B9 /* PBXTargetDependency */,
+			);
+			name = CountApp_EllyUITests;
+			productName = CountApp_EllyUITests;
+			productReference = 4530891D2B52725700E199B9 /* CountApp_EllyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		453088FB2B52725500E199B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					453089022B52725500E199B9 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					453089122B52725700E199B9 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 453089022B52725500E199B9;
+					};
+					4530891C2B52725700E199B9 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 453089022B52725500E199B9;
+					};
+				};
+			};
+			buildConfigurationList = 453088FE2B52725500E199B9 /* Build configuration list for PBXProject "CountApp_Elly" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = 453088FA2B52725500E199B9;
+			packageReferences = (
+				453089302B5275CD00E199B9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 453089042B52725500E199B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				453089022B52725500E199B9 /* CountApp_Elly */,
+				453089122B52725700E199B9 /* CountApp_EllyTests */,
+				4530891C2B52725700E199B9 /* CountApp_EllyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		453089012B52725500E199B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4530890E2B52725700E199B9 /* Preview Assets.xcassets in Resources */,
+				4530890B2B52725700E199B9 /* Assets.xcassets in Resources */,
+				453946A12B52BE19007FE780 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453089112B52725700E199B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4530891B2B52725700E199B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		453088FF2B52725500E199B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453089492B527FD500E199B9 /* Latte.swift in Sources */,
+				453089362B5278A100E199B9 /* CoffeeMenuView.swift in Sources */,
+				4530894D2B52874E00E199B9 /* MenuItemView.swift in Sources */,
+				453946A52B52CBA3007FE780 /* TapCountingContextView.swift in Sources */,
+				453089432B527B2F00E199B9 /* Americano.swift in Sources */,
+				4530894B2B527FF700E199B9 /* CaramelMacchiato.swift in Sources */,
+				453089092B52725500E199B9 /* CounterAppView.swift in Sources */,
+				453089402B527AAF00E199B9 /* Menu.swift in Sources */,
+				453089512B52974700E199B9 /* Color+.swift in Sources */,
+				453946A32B52CB20007FE780 /* CoffeeMenuContextView.swift in Sources */,
+				453089382B5278B000E199B9 /* CounterAppStore.swift in Sources */,
+				4539469E2B52B37D007FE780 /* CountingItemView.swift in Sources */,
+				4530893C2B5278C900E199B9 /* TapCountingView.swift in Sources */,
+				453089472B527FBD00E199B9 /* Hazelnut.swift in Sources */,
+				453089072B52725500E199B9 /* CountApp_EllyApp.swift in Sources */,
+				453089452B527F8900E199B9 /* Mocha.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4530890F2B52725700E199B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453089182B52725700E199B9 /* CountApp_EllyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453089192B52725700E199B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453089242B52725700E199B9 /* CountApp_EllyUITestsLaunchTests.swift in Sources */,
+				453089222B52725700E199B9 /* CountApp_EllyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		453089152B52725700E199B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 453089022B52725500E199B9 /* CountApp_Elly */;
+			targetProxy = 453089142B52725700E199B9 /* PBXContainerItemProxy */;
+		};
+		4530891F2B52725700E199B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 453089022B52725500E199B9 /* CountApp_Elly */;
+			targetProxy = 4530891E2B52725700E199B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		453089252B52725700E199B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		453089262B52725700E199B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		453089282B52725700E199B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CountApp_Elly/Preview Content\"";
+				DEVELOPMENT_TEAM = 4HT2BE32MC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elly.CountApp-Elly";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		453089292B52725700E199B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CountApp_Elly/Preview Content\"";
+				DEVELOPMENT_TEAM = 4HT2BE32MC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elly.CountApp-Elly";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4530892B2B52725700E199B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HT2BE32MC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elly.CountApp-EllyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountApp_Elly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CountApp_Elly";
+			};
+			name = Debug;
+		};
+		4530892C2B52725700E199B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HT2BE32MC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elly.CountApp-EllyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountApp_Elly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CountApp_Elly";
+			};
+			name = Release;
+		};
+		4530892E2B52725700E199B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HT2BE32MC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elly.CountApp-EllyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CountApp_Elly;
+			};
+			name = Debug;
+		};
+		4530892F2B52725700E199B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HT2BE32MC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elly.CountApp-EllyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CountApp_Elly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		453088FE2B52725500E199B9 /* Build configuration list for PBXProject "CountApp_Elly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453089252B52725700E199B9 /* Debug */,
+				453089262B52725700E199B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		453089272B52725700E199B9 /* Build configuration list for PBXNativeTarget "CountApp_Elly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453089282B52725700E199B9 /* Debug */,
+				453089292B52725700E199B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4530892A2B52725700E199B9 /* Build configuration list for PBXNativeTarget "CountApp_EllyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4530892B2B52725700E199B9 /* Debug */,
+				4530892C2B52725700E199B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4530892D2B52725700E199B9 /* Build configuration list for PBXNativeTarget "CountApp_EllyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4530892E2B52725700E199B9 /* Debug */,
+				4530892F2B52725700E199B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		453089302B5275CD00E199B9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		453089312B5275CD00E199B9 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 453089302B5275CD00E199B9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 453088FB2B52725500E199B9 /* Project object */;
+}

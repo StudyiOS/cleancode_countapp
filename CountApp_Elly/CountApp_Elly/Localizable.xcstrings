@@ -1,0 +1,168 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "%dpoint" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d점"
+          }
+        }
+      }
+    },
+    "+%lld" : {
+
+    },
+    "+1" : {
+
+    },
+    "+5" : {
+
+    },
+    "+10" : {
+
+    },
+    "menu_americano" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아메리카노"
+          }
+        }
+      }
+    },
+    "menu_caramel_macchiato" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카라멜 마키아또"
+          }
+        }
+      }
+    },
+    "menu_hazelnut" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "헤이즐넛 라떼"
+          }
+        }
+      }
+    },
+    "menu_latte" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "라떼"
+          }
+        }
+      }
+    },
+    "menu_mocha" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카페 모카"
+          }
+        }
+      }
+    },
+    "text_all_reset" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모두 초기화"
+          }
+        }
+      }
+    },
+    "text_reset" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "초기화"
+          }
+        }
+      }
+    },
+    "text_reset_americano" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아메리카노 초기화"
+          }
+        }
+      }
+    },
+    "text_reset_caramel_macchiato" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카라멜 마끼아또 초기화"
+          }
+        }
+      }
+    },
+    "text_reset_hazelnut" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "헤이즐넛 라떼 초기화"
+          }
+        }
+      }
+    },
+    "text_reset_latte" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카페 라떼 초기화"
+          }
+        }
+      }
+    },
+    "text_reset_mocha" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카페 모카 초기화"
+          }
+        }
+      }
+    },
+    "title_coffee_menu_counting" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "커피메뉴 카운팅"
+          }
+        }
+      }
+    },
+    "title_tap_counting" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "탭 횟수"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
