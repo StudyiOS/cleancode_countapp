@@ -24,11 +24,6 @@ struct CountingItemView: View {
                 Text(String(format: String(localized: "%dpoint"), menu.tapCount))
                     .font(.system(size: 15, weight: .bold))
                     .foregroundStyle(Color(hex: 0x283618))
-                    .onAppear(perform: {
-                        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { timer in
-                            viewStore.send(.hideMenuCounting)
-                        }
-                    })
                 
             }
             .padding(.trailing, 20)

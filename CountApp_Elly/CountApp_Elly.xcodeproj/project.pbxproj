@@ -175,7 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				4530893B2B5278C900E199B9 /* TapCountingView.swift */,
-				453946A42B52CBA3007FE780 /* TapCountingContextView.swift */,
+				453946A62B557C4E007FE780 /* Subviews */,
 			);
 			path = TapCounting;
 			sourceTree = "<group>";
@@ -215,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				4530894C2B52874E00E199B9 /* MenuItemView.swift */,
-				4539469D2B52B37D007FE780 /* CountingItemView.swift */,
 				453946A22B52CB20007FE780 /* CoffeeMenuContextView.swift */,
 			);
 			path = Subviews;
@@ -236,6 +235,15 @@
 				453089372B5278B000E199B9 /* CounterAppStore.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		453946A62B557C4E007FE780 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4539469D2B52B37D007FE780 /* CountingItemView.swift */,
+				453946A42B52CBA3007FE780 /* TapCountingContextView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
