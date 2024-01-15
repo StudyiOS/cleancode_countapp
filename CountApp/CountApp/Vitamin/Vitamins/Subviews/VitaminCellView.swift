@@ -46,7 +46,7 @@ struct VitaminCellView: View {
                 menuItems(with: viewStore)
             }
             .onTapGesture {
-                viewStore.send(.increaseCount(viewStore.id, 1))
+                viewStore.send(.increaseCount(1))
             }
         }
         .padding(.horizontal, 40)
@@ -84,7 +84,7 @@ private extension VitaminCellView {
         Button(
             role: .destructive,
             action: {
-                viewStore.send(.decreaseToZero(viewStore.state.id))
+                viewStore.send(.decreaseToZero)
             }, label: {
                 Text("모두 초기화")
             }
@@ -93,7 +93,7 @@ private extension VitaminCellView {
 
     func increaseButton(with viewStore: VitaminStore, step: Int) -> Button<Text> {
         Button("+" + step.toString) {
-            viewStore.send(.increaseCount(viewStore.state.id, step))
+            viewStore.send(.increaseCount(step))
         }
     }
 }

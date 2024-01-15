@@ -12,7 +12,7 @@ import ComposableArchitecture
 struct CountAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(store: Store(initialState: Vitamins.State()) {
+            ContentView(store: Store(initialState: Vitamins.State(vitamins: .mocks)) {
                 Vitamins()._printChanges()
             })
         }

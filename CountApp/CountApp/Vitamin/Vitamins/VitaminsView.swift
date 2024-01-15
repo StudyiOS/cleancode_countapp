@@ -12,6 +12,8 @@ struct VitaminsView: View {
 
     let store: StoreOf<Vitamins>
 
+    private let NAVIGATION_TITLE = "비타민을 먹으세요"
+
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
             NavigationView {
@@ -21,7 +23,7 @@ struct VitaminsView: View {
                         VitaminCellView(store: store)
                     }
                 }
-                .navigationTitle("비타민을 먹으세요")
+                .navigationTitle(NAVIGATION_TITLE)
                 .navigationBarTitleDisplayMode(.automatic)
                 .frame(maxHeight: .infinity, alignment: .top)
                 .padding(.vertical)

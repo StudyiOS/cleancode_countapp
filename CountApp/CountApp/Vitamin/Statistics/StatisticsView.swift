@@ -12,6 +12,8 @@ struct StatisticsView: View {
 
     let store: StoreOf<Vitamins>
 
+    private let NAVIGATION_TITLE = "먹은 횟수"
+
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
             NavigationView {
@@ -21,7 +23,7 @@ struct StatisticsView: View {
                         StatisticsCellView(store: store)
                     }
                 }
-                .navigationTitle("먹은 횟수")
+                .navigationTitle(NAVIGATION_TITLE)
                 .navigationBarTitleDisplayMode(.automatic)
                 .toolbar {
                     Menu {

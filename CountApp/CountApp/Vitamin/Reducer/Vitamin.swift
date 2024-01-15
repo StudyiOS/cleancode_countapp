@@ -20,8 +20,8 @@ struct Vitamin {
 
     enum Action: BindableAction, Sendable {
         case binding(BindingAction<State>)
-        case increaseCount(UUID, Int)
-        case decreaseToZero(UUID)
+        case increaseCount(Int)
+        case decreaseToZero
     }
 
     var body: some Reducer<State, Action> {
@@ -30,9 +30,11 @@ struct Vitamin {
             switch action {
                 case .binding:
                     return .none
-                case .increaseCount:
+                case .increaseCount(let count):
+                    state.count += count
                     return .none
                 case .decreaseToZero:
+                    state.count  = 0
                     return .none
             }
         }
